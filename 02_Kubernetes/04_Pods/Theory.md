@@ -11,6 +11,10 @@ Why introduce this extra layer? Because in the real world, some closely coupled 
 to share resources directly. Rather than complicating the container abstraction, Kubernetes
 creates a shared environment at the Pod level.
 
+> **🐳 Coming from Docker?**
+>
+> In Docker, the smallest unit is a container — `docker run nginx` runs one container. In Kubernetes, the smallest unit is a Pod, which wraps one or more containers that always run together on the same machine. A single-container Pod is like a single `docker run`. A multi-container Pod is like `docker-compose` for containers that are inseparably linked — they share the same network interface (same localhost) and can share volumes directly. You don't usually create Pods directly, just like you don't usually run containers directly in production Docker.
+
 ---
 
 ## Why Pods — Not Containers?

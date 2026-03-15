@@ -16,6 +16,10 @@ Now multiply this by 20 services. And 100 services. Every team implements the sa
 
 **A service mesh solves this by moving all of that infrastructure logic out of application code and into the network layer itself** — specifically, into a sidecar proxy running alongside every pod.
 
+> **🐳 Coming from Docker?**
+>
+> In Docker Compose, inter-container communication is plain HTTP or TCP with no encryption, no retries, and no visibility into what's happening at the network level. You'd have to add these features to every application manually. A service mesh adds them at the infrastructure level — every pod gets a sidecar proxy (Envoy for Istio, the same for Linkerd) that intercepts all network traffic. This proxy handles mTLS encryption, circuit breaking, retries, timeouts, and traffic metrics — without changing a single line of application code. It's the difference between configuring reliability features in your app vs having the network provide them automatically.
+
 ---
 
 ## What Is a Service Mesh?

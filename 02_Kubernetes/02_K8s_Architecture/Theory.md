@@ -9,6 +9,10 @@ A request traveled through multiple components, each with a specific responsibil
 this journey is the foundation of diagnosing problems, tuning performance, and building confidence
 with Kubernetes. Let's walk through it.
 
+> **🐳 Coming from Docker?**
+>
+> In Docker, you talk directly to the Docker daemon on one machine — `dockerd` does everything: builds, runs, networks, and stores images. In Kubernetes, responsibilities are split across specialized components. There's no single daemon — instead you have an API Server (the front door), a Scheduler (decides which machine runs what), a Controller Manager (watches and fixes things), etcd (the memory), and Kubelets (the Docker daemons of each worker node). It's more complex, but each piece can scale and fail independently.
+
 ---
 
 ## The Two Halves: Control Plane and Worker Nodes

@@ -25,6 +25,10 @@ shell scripts and post-it notes on your monitor.
 This is the problem Kubernetes (often abbreviated **K8s** — the 8 stands for the 8 letters between
 K and s) was built to solve.
 
+> **🐳 Coming from Docker?**
+>
+> Docker lets you run containers on ONE machine. You use `docker run` and manage each container manually. Kubernetes is what you reach for when that one machine isn't enough — when you need containers spread across 10 or 100 machines, automatically restarted when they crash, and load-balanced without you writing any scripts. Think of Docker as running a single restaurant kitchen, and Kubernetes as the operations system behind a restaurant chain.
+
 ---
 
 ## Kubernetes as the "Data Center Operating System"

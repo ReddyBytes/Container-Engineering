@@ -8,6 +8,10 @@ Imagine you need Kubernetes to manage a PostgreSQL cluster — with automated fa
 
 This is exactly the problem Custom Resources solve. They let you teach Kubernetes to understand entirely new resource types — and pair them with controllers that know how to operate them.
 
+> **🐳 Coming from Docker?**
+>
+> Docker is not extensible at the API level — you can't add a "Database" resource type to Docker and have Docker manage databases as a first-class concept. Kubernetes can be extended with Custom Resource Definitions (CRDs). When you install a database operator like CloudNativePG, it adds a `Postgresql` resource type to your cluster. You write YAML like `kind: Postgresql` and the operator manages creating pods, configuring replication, and handling failover — just like built-in Kubernetes resources. This is why the Kubernetes ecosystem is so rich: every tool adds its own resource types.
+
 ---
 
 ## What is a Custom Resource Definition (CRD)?

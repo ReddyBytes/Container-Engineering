@@ -8,6 +8,10 @@ That was the state of software before modern observability. Applications ran, an
 
 Kubernetes changes the game — but only if you set up the right tools. The platform itself generates a firehose of data: CPU and memory per pod, HTTP request rates, error counts, pod restarts, node pressure events, application logs from every container. The challenge is capturing it, storing it, and making sense of it — fast enough to act on it.
 
+> **🐳 Coming from Docker?**
+>
+> With Docker, you check logs with `docker logs mycontainer` — one container at a time. For monitoring, you'd install something like Portainer or use `docker stats`. In Kubernetes, with potentially thousands of containers spread across dozens of nodes, you need cluster-wide solutions. Prometheus scrapes metrics from all pods automatically. Grafana visualizes them. Loki or the EFK stack (Elasticsearch-Fluentd-Kibana) aggregates logs from every container into one searchable system. What was a simple `docker logs` command becomes a full observability platform — but one that actually scales.
+
 This module covers two fundamental pillars of observability:
 
 1. **Metrics** — numerical time-series data: request rate, error rate, latency, CPU usage

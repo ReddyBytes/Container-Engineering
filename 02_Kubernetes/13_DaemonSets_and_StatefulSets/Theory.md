@@ -10,6 +10,10 @@ Kubernetes Deployments are excellent for stateless applications — just say "ru
 
 DaemonSets solve problem 1. StatefulSets solve problem 2.
 
+> **🐳 Coming from Docker?**
+>
+> Docker Compose has no concept of "run exactly one container per machine" — that's a DaemonSet. And Docker Compose has no concept of "containers that need stable names and ordered startup" — that's a StatefulSet. In Docker, if you need a log shipper on every VM, you configure it outside Docker entirely. In Kubernetes, a DaemonSet does this automatically: add a node, the pod appears; remove the node, the pod is gone. StatefulSets solve the problem of databases in containers: `postgres-0`, `postgres-1`, `postgres-2` always get the same names and the same storage volumes, so replication config doesn't break on restarts.
+
 ---
 
 ## DaemonSets: One Pod Per Node

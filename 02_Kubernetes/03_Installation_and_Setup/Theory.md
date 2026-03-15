@@ -6,6 +6,10 @@ Before you write a single line of Kubernetes YAML, you need a cluster to run it 
 range from a single-command local cluster on your laptop to a fully managed cloud service handling
 thousands of nodes. Let's start with what you'll use most as a beginner: local development clusters.
 
+> **🐳 Coming from Docker?**
+>
+> With Docker, you install Docker Desktop and you're done — one tool, one command. With Kubernetes, the "installation" story is more nuanced: you need `kubectl` (the CLI), a cluster to talk to (minikube/kind for local, EKS/GKE/AKS for cloud), and a kubeconfig file that tells kubectl which cluster to connect to. Think of it like Docker needing a client AND a server — except the server can be anywhere.
+
 ---
 
 ## Local Development Options

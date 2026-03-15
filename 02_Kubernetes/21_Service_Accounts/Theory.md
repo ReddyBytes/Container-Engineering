@@ -14,6 +14,10 @@ Kubernetes has two categories of identities:
 
 This module is about Service Accounts — the identity system for workloads.
 
+> **🐳 Coming from Docker?**
+>
+> Docker containers run as a Linux user (root or a non-root UID you set), but there's no concept of a "Docker identity" that the container uses to make API calls. In Kubernetes, a Service Account is the identity a pod uses when it needs to talk to the Kubernetes API itself — for example, a monitoring agent that needs to list all pods, or a CI/CD tool that needs to create deployments. Without explicit configuration, every pod gets the `default` Service Account, which has minimal permissions. Assigning a specific Service Account with exactly the RBAC permissions it needs is a core security practice.
+
 ---
 
 ## The Default Service Account Problem

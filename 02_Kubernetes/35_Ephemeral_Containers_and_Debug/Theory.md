@@ -23,6 +23,10 @@ This was the state of Kubernetes debugging for years. Teams faced a terrible tra
 
 **Ephemeral containers** solve this problem entirely. They let you inject a temporary, fully-equipped debug container into a running pod — without restarting it, without modifying the original image, and without the debug container affecting the pod's production workload.
 
+> **🐳 Coming from Docker?**
+>
+> In Docker, debugging a running container is simple: `docker exec -it mycontainer sh`. As long as the image has a shell, you're in. The problem arises when you start using distroless or scratch images for security — no shell, no tools, `docker exec` fails immediately. `docker debug` (Docker Desktop 4.27+) solves this for Docker by attaching a debug container. Kubernetes ephemeral containers solve the same problem cluster-wide: `kubectl debug` injects a temporary debug container into a running pod with whatever tools you need, sharing the pod's network and optionally its process namespace. The debug container is temporary — it disappears when you exit, and the running pod is never restarted.
+
 ---
 
 ## What Are Ephemeral Containers?

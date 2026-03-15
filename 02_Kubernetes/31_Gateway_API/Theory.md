@@ -13,6 +13,10 @@ Then the requests start coming in.
 
 This was the lived experience of Kubernetes users for years. **Gateway API** is the answer the community built to escape it.
 
+> **🐳 Coming from Docker?**
+>
+> In Docker, you expose a service with `-p 80:80` — one port, one container. For multiple services, you'd manually configure an nginx container as a reverse proxy. Kubernetes Ingress was the first attempt at a managed reverse proxy: declare routing rules in YAML, and an Ingress controller handles the nginx config for you. Gateway API is the next generation: it separates the "what cluster-level gateway exists" (platform team's job) from "what routes my app uses" (app team's job). It also natively supports traffic splitting for canary releases, header-based routing for A/B tests, and more protocols than just HTTP — things Ingress required messy, non-portable annotations to achieve.
+
 ---
 
 ## The Problem With Ingress

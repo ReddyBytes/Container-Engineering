@@ -6,6 +6,10 @@ Imagine a web server running inside a Kubernetes pod. The container is up, the p
 
 Without health probes, Kubernetes has no way to know the difference between a healthy pod and a pod that is technically running but completely broken. Health probes are the mechanism that closes this gap.
 
+> **🐳 Coming from Docker?**
+>
+> Docker has a basic `HEALTHCHECK` instruction in Dockerfiles — one command, runs periodically, container is marked healthy or unhealthy. Kubernetes health probes are far more powerful: there are THREE types (liveness to kill and restart, readiness to stop sending traffic, startup for slow-starting apps), each independently configurable. Docker's healthcheck only marks a container unhealthy — it doesn't restart it unless you add extra configuration. Kubernetes liveness probes automatically restart pods that fail. Readiness probes are something Docker has no equivalent for — they prevent traffic from reaching pods that aren't ready yet, even if the process is running.
+
 ---
 
 ## Three Types of Probes

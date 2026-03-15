@@ -23,6 +23,10 @@ Consider a cluster shared by three teams:
 
 Without RBAC, any service account or team member could accidentally (or maliciously) delete another team's resources, read secrets from other namespaces, or modify cluster-level configs. RBAC lets you enforce boundaries without running separate clusters.
 
+> **🐳 Coming from Docker?**
+>
+> Docker has very basic access control — you either have access to the Docker socket (and therefore can do anything, including root-level host access) or you don't. There's no "this person can only view containers but not stop them." Kubernetes RBAC is a full permissions system: you define what actions (get, list, create, delete) someone can perform on which resources (pods, secrets, deployments) in which namespaces. A developer can have full access to the `staging` namespace but read-only access to `production`. A CI/CD service account can deploy apps but never read secrets.
+
 ---
 
 ## The Four Core Components

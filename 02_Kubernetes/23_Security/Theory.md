@@ -14,6 +14,10 @@ This is called **defense in depth**. And in Kubernetes, it means:
 - Detecting threats at runtime (Falco)
 - Enforcing organization-wide policies (OPA/Gatekeeper, Kyverno)
 
+> **🐳 Coming from Docker?**
+>
+> Docker security is mainly about the image and runtime: non-root users, read-only filesystems, dropping capabilities with `--cap-drop`, scanning images with Scout or Trivy. Kubernetes security adds entire new layers: Pod Security Standards (cluster-level policies restricting what pods can do), Admission Controllers (gatekeepers that validate every API request before it's accepted), RBAC (who can do what), NetworkPolicies (what can talk to what), and Secrets encryption at rest. Security in Kubernetes is a layered system — each layer assumes the previous one can be bypassed, so multiple controls work together.
+
 Let's build the castle, layer by layer.
 
 ---
