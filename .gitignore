@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+env/
+.venv/
+*.egg-info/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Docker local
+.docker/
+
+# K8s local
+*.kubeconfig
+kubeconfig
+
+# Environment
+.env
+.env.*
+
+# Claude
+CLAUDE.md

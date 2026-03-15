@@ -1,0 +1,128 @@
+<svg viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   style="stop-color:#0a0f1e"/>
+      <stop offset="50%"  style="stop-color:#0d1b2e"/>
+      <stop offset="100%" style="stop-color:#071018"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   style="stop-color:#0EA5E9"/>
+      <stop offset="50%"  style="stop-color:#14B8A6"/>
+      <stop offset="100%" style="stop-color:#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   style="stop-color:#0EA5E9;stop-opacity:0"/>
+      <stop offset="50%"  style="stop-color:#14B8A6"/>
+      <stop offset="100%" style="stop-color:#0EA5E9;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   style="stop-color:#0e2a3a"/>
+      <stop offset="100%" style="stop-color:#071018"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="240" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.04" stroke="#0EA5E9" stroke-width="0.5">
+    <line x1="0" y1="60"  x2="900" y2="60"/>
+    <line x1="0" y1="120" x2="900" y2="120"/>
+    <line x1="0" y1="180" x2="900" y2="180"/>
+    <line x1="150" y1="0" x2="150" y2="240"/>
+    <line x1="300" y1="0" x2="300" y2="240"/>
+    <line x1="450" y1="0" x2="450" y2="240"/>
+    <line x1="600" y1="0" x2="600" y2="240"/>
+    <line x1="750" y1="0" x2="750" y2="240"/>
+  </g>
+
+  <!-- Bottom row: container pipeline nodes -->
+  <!-- Node: Code -->
+  <rect x="28" y="170" width="80" height="32" rx="5" fill="url(#nodeGrad)" stroke="#0EA5E9" stroke-width="1.5"/>
+  <text x="68" y="191" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#0EA5E9" letter-spacing="1">📝 Code</text>
+
+  <!-- Arrow -->
+  <line x1="108" y1="186" x2="136" y2="186" stroke="#0EA5E9" stroke-width="1.5" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.4s" repeatCount="indefinite"/>
+  </line>
+  <polygon points="136,182 144,186 136,190" fill="#0EA5E9" opacity="0.8"/>
+
+  <!-- Node: Dockerfile -->
+  <rect x="144" y="170" width="96" height="32" rx="5" fill="url(#nodeGrad)" stroke="#14B8A6" stroke-width="1.5"/>
+  <text x="192" y="191" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#14B8A6" letter-spacing="1">🐳 Dockerfile</text>
+
+  <!-- Arrow -->
+  <line x1="240" y1="186" x2="268" y2="186" stroke="#14B8A6" stroke-width="1.5" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.4s" begin="0.25s" repeatCount="indefinite"/>
+  </line>
+  <polygon points="268,182 276,186 268,190" fill="#14B8A6" opacity="0.8"/>
+
+  <!-- Node: Image -->
+  <rect x="276" y="170" width="80" height="32" rx="5" fill="url(#nodeGrad)" stroke="#0EA5E9" stroke-width="1.5"/>
+  <text x="316" y="191" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#0EA5E9" letter-spacing="1">📦 Image</text>
+
+  <!-- Arrow -->
+  <line x1="356" y1="186" x2="384" y2="186" stroke="#0EA5E9" stroke-width="1.5" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.4s" begin="0.5s" repeatCount="indefinite"/>
+  </line>
+  <polygon points="384,182 392,186 384,190" fill="#0EA5E9" opacity="0.8"/>
+
+  <!-- Node: Registry -->
+  <rect x="392" y="170" width="84" height="32" rx="5" fill="url(#nodeGrad)" stroke="#14B8A6" stroke-width="1.5"/>
+  <text x="434" y="191" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#14B8A6" letter-spacing="1">🗄️ Registry</text>
+
+  <!-- Arrow -->
+  <line x1="476" y1="186" x2="504" y2="186" stroke="#14B8A6" stroke-width="1.5" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.4s" begin="0.75s" repeatCount="indefinite"/>
+  </line>
+  <polygon points="504,182 512,186 504,190" fill="#14B8A6" opacity="0.8"/>
+
+  <!-- Node: K8s Deploy -->
+  <rect x="512" y="170" width="96" height="32" rx="5" fill="url(#nodeGrad)" stroke="#0EA5E9" stroke-width="1.5"/>
+  <text x="560" y="191" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#0EA5E9" letter-spacing="1">⎈ K8s Deploy</text>
+
+  <!-- Arrow -->
+  <line x1="608" y1="186" x2="636" y2="186" stroke="#0EA5E9" stroke-width="1.5" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.4s" begin="1.0s" repeatCount="indefinite"/>
+  </line>
+  <polygon points="636,182 644,186 636,190" fill="#0EA5E9" opacity="0.8"/>
+
+  <!-- Node: Production -->
+  <rect x="644" y="170" width="96" height="32" rx="5" fill="url(#nodeGrad)" stroke="#14B8A6" stroke-width="1.5"/>
+  <text x="692" y="191" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#14B8A6" letter-spacing="1">🚀 Production</text>
+
+  <!-- Top accent bar -->
+  <rect x="200" y="42" width="500" height="1.5" fill="url(#accentGrad)" rx="1">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- CONTAINER text -->
+  <text x="450" y="96" text-anchor="middle"
+        font-family="'Courier New', Courier, monospace"
+        font-size="18" font-weight="bold"
+        fill="#94a3b8" letter-spacing="8">CONTAINER</text>
+
+  <!-- ENGINEERING text -->
+  <text x="450" y="155" text-anchor="middle"
+        font-family="'Courier New', Courier, monospace"
+        font-size="52" font-weight="bold"
+        fill="url(#titleGrad)" filter="url(#glow)" letter-spacing="8">ENGINEERING</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="200" y="160" width="500" height="1.5" fill="url(#accentGrad)" rx="1">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Subtitle -->
+  <text x="450" y="222" text-anchor="middle"
+        font-family="'Courier New', Courier, monospace"
+        font-size="11" fill="#64748b" letter-spacing="4">DOCKER  ·  KUBERNETES  ·  ZERO TO PRODUCTION</text>
+</svg>
