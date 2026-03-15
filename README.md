@@ -18,7 +18,11 @@
 
 <img src="./assets/divider.svg" width="100%"/>
 
-## 🐳 What Is This Repo?
+<div align="center">
+
+### 🐳 What Is This Repo?
+
+</div>
 
 A complete, structured learning guide for **Docker and Kubernetes** — from your first container all the way to production-grade cluster management, GitOps, service meshes, and multi-cloud deployments.
 
@@ -34,7 +38,7 @@ Every topic follows the same format:
 
 <div align="center">
 
-## 🗺️ Section Overview
+### 🗺️ Section Overview
 
 </div>
 
@@ -55,7 +59,7 @@ Every topic follows the same format:
 
 <div align="center">
 
-## 🛤️ Choose Your Path
+### 🛤️ Choose Your Path
 
 </div>
 
@@ -93,6 +97,8 @@ Every topic follows the same format:
 | 13 | [Docker Swarm](./01_Docker/13_Docker_Swarm/Theory.md) | Basic orchestration, services, stacks |
 | 14 | [Docker in CI/CD](./01_Docker/14_Docker_in_CICD/Theory.md) | GitHub Actions, build → push → deploy |
 | 15 | [Best Practices](./01_Docker/15_Best_Practices/Theory.md) | Layer optimization, .dockerignore, tagging |
+| 16 | [BuildKit & Docker Scout](./01_Docker/16_BuildKit_and_Docker_Scout/Theory.md) | Parallel builds, cache mounts, CVE scanning |
+| 17 | [Docker Init & Debug](./01_Docker/17_Docker_Init_and_Debug/Theory.md) | Scaffold projects, debug distroless containers |
 
 **Prerequisite:** Docker beginner path complete.
 
@@ -159,12 +165,15 @@ Every topic follows the same format:
 
 <div align="center">
 
-## 📚 Full Curriculum
+
+
+
+### 📚 Full Curriculum
 
 </div>
 
 <details>
-<summary><strong>🐳 Section 01 — Docker (15 modules)</strong></summary>
+<summary><strong>🐳 Section 01 — Docker (17 modules)</strong></summary>
 
 | Module | Theory | Cheatsheet | Interview Q&A | Code |
 |--------|--------|------------|---------------|------|
@@ -173,21 +182,23 @@ Every topic follows the same format:
 | 03 · Installation & Setup | [📖](./01_Docker/03_Installation_and_Setup/Theory.md) | [⚡](./01_Docker/03_Installation_and_Setup/Cheatsheet.md) | [🎯](./01_Docker/03_Installation_and_Setup/Interview_QA.md) | — |
 | 04 · Images & Layers | [📖](./01_Docker/04_Images_and_Layers/Theory.md) | [⚡](./01_Docker/04_Images_and_Layers/Cheatsheet.md) | [🎯](./01_Docker/04_Images_and_Layers/Interview_QA.md) | [💻](./01_Docker/04_Images_and_Layers/Code_Example.md) |
 | 05 · Dockerfile | [📖](./01_Docker/05_Dockerfile/Theory.md) | [⚡](./01_Docker/05_Dockerfile/Cheatsheet.md) | [🎯](./01_Docker/05_Dockerfile/Interview_QA.md) | [💻](./01_Docker/05_Dockerfile/Code_Example.md) |
-| 06 · Container Lifecycle | [📖](./01_Docker/06_Containers_Lifecycle/Theory.md) | [⚡](./01_Docker/06_Containers_Lifecycle/Cheatsheet.md) | [🎯](./01_Docker/06_Containers_Lifecycle/Interview_QA.md) | [💻](./01_Docker/06_Containers_Lifecycle/Code_Example.md) |
-| 07 · Volumes & Bind Mounts | [📖](./01_Docker/07_Volumes_and_Bind_Mounts/Theory.md) | [⚡](./01_Docker/07_Volumes_and_Bind_Mounts/Cheatsheet.md) | [🎯](./01_Docker/07_Volumes_and_Bind_Mounts/Interview_QA.md) | [💻](./01_Docker/07_Volumes_and_Bind_Mounts/Code_Example.md) |
-| 08 · Networking | [📖](./01_Docker/08_Networking/Theory.md) | [⚡](./01_Docker/08_Networking/Cheatsheet.md) | [🎯](./01_Docker/08_Networking/Interview_QA.md) | [💻](./01_Docker/08_Networking/Code_Example.md) |
-| 09 · Docker Compose | [📖](./01_Docker/09_Docker_Compose/Theory.md) | [⚡](./01_Docker/09_Docker_Compose/Cheatsheet.md) | [🎯](./01_Docker/09_Docker_Compose/Interview_QA.md) | [💻](./01_Docker/09_Docker_Compose/Code_Example.md) |
+| 06 · Container Lifecycle | [📖](./01_Docker/06_Containers_Lifecycle/Theory.md) | [⚡](./01_Docker/06_Containers_Lifecycle/Cheatsheet.md) | [🎯](./01_Docker/06_Containers_Lifecycle/Interview_QA.md) | — |
+| 07 · Volumes & Bind Mounts | [📖](./01_Docker/07_Volumes_and_Bind_Mounts/Theory.md) | [⚡](./01_Docker/07_Volumes_and_Bind_Mounts/Cheatsheet.md) | [🎯](./01_Docker/07_Volumes_and_Bind_Mounts/Interview_QA.md) | — |
+| 08 · Networking | [📖](./01_Docker/08_Networking/Theory.md) | [⚡](./01_Docker/08_Networking/Cheatsheet.md) | [🎯](./01_Docker/08_Networking/Interview_QA.md) | — |
+| 09 · Docker Compose | [📖](./01_Docker/09_Docker_Compose/Theory.md) | [⚡](./01_Docker/09_Docker_Compose/Cheatsheet.md) | [🎯](./01_Docker/09_Docker_Compose/Interview_QA.md) | — |
 | 10 · Docker Registry | [📖](./01_Docker/10_Docker_Registry/Theory.md) | [⚡](./01_Docker/10_Docker_Registry/Cheatsheet.md) | [🎯](./01_Docker/10_Docker_Registry/Interview_QA.md) | — |
 | 11 · Multi-Stage Builds | [📖](./01_Docker/11_Multi_Stage_Builds/Theory.md) | [⚡](./01_Docker/11_Multi_Stage_Builds/Cheatsheet.md) | [🎯](./01_Docker/11_Multi_Stage_Builds/Interview_QA.md) | [💻](./01_Docker/11_Multi_Stage_Builds/Code_Example.md) |
 | 12 · Docker Security | [📖](./01_Docker/12_Docker_Security/Theory.md) | [⚡](./01_Docker/12_Docker_Security/Cheatsheet.md) | [🎯](./01_Docker/12_Docker_Security/Interview_QA.md) | — |
 | 13 · Docker Swarm | [📖](./01_Docker/13_Docker_Swarm/Theory.md) | [⚡](./01_Docker/13_Docker_Swarm/Cheatsheet.md) | [🎯](./01_Docker/13_Docker_Swarm/Interview_QA.md) | [💻](./01_Docker/13_Docker_Swarm/Code_Example.md) |
 | 14 · Docker in CI/CD | [📖](./01_Docker/14_Docker_in_CICD/Theory.md) | [⚡](./01_Docker/14_Docker_in_CICD/Cheatsheet.md) | [🎯](./01_Docker/14_Docker_in_CICD/Interview_QA.md) | [💻](./01_Docker/14_Docker_in_CICD/Code_Example.md) |
 | 15 · Best Practices | [📖](./01_Docker/15_Best_Practices/Theory.md) | [⚡](./01_Docker/15_Best_Practices/Cheatsheet.md) | [🎯](./01_Docker/15_Best_Practices/Interview_QA.md) | — |
+| 16 · BuildKit & Docker Scout | [📖](./01_Docker/16_BuildKit_and_Docker_Scout/Theory.md) | [⚡](./01_Docker/16_BuildKit_and_Docker_Scout/Cheatsheet.md) | [🎯](./01_Docker/16_BuildKit_and_Docker_Scout/Interview_QA.md) | [💻](./01_Docker/16_BuildKit_and_Docker_Scout/Code_Example.md) |
+| 17 · Docker Init & Debug | [📖](./01_Docker/17_Docker_Init_and_Debug/Theory.md) | [⚡](./01_Docker/17_Docker_Init_and_Debug/Cheatsheet.md) | [🎯](./01_Docker/17_Docker_Init_and_Debug/Interview_QA.md) | [💻](./01_Docker/17_Docker_Init_and_Debug/Code_Example.md) |
 
 </details>
 
 <details>
-<summary><strong>⎈ Section 02 — Kubernetes (30 modules)</strong></summary>
+<summary><strong>⎈ Section 02 — Kubernetes (37 modules)</strong></summary>
 
 | Module | Theory | Cheatsheet | Interview Q&A | Extra |
 |--------|--------|------------|---------------|-------|
@@ -221,6 +232,13 @@ Every topic follows the same format:
 | 28 · Cluster Management | [📖](./02_Kubernetes/28_Cluster_Management/Theory.md) | [⚡](./02_Kubernetes/28_Cluster_Management/Cheatsheet.md) | [🎯](./02_Kubernetes/28_Cluster_Management/Interview_QA.md) | — |
 | 29 · Backup & DR | [📖](./02_Kubernetes/29_Backup_and_DR/Theory.md) | [⚡](./02_Kubernetes/29_Backup_and_DR/Cheatsheet.md) | [🎯](./02_Kubernetes/29_Backup_and_DR/Interview_QA.md) | — |
 | 30 · Cost Optimization | [📖](./02_Kubernetes/30_Cost_Optimization/Theory.md) | [⚡](./02_Kubernetes/30_Cost_Optimization/Cheatsheet.md) | [🎯](./02_Kubernetes/30_Cost_Optimization/Interview_QA.md) | — |
+| 31 · Gateway API | [📖](./02_Kubernetes/31_Gateway_API/Theory.md) | [⚡](./02_Kubernetes/31_Gateway_API/Cheatsheet.md) | [🎯](./02_Kubernetes/31_Gateway_API/Interview_QA.md) | [💻](./02_Kubernetes/31_Gateway_API/Code_Example.md) |
+| 32 · KEDA Event-Driven Autoscaling | [📖](./02_Kubernetes/32_KEDA_Event_Driven_Autoscaling/Theory.md) | [⚡](./02_Kubernetes/32_KEDA_Event_Driven_Autoscaling/Cheatsheet.md) | [🎯](./02_Kubernetes/32_KEDA_Event_Driven_Autoscaling/Interview_QA.md) | [💻](./02_Kubernetes/32_KEDA_Event_Driven_Autoscaling/Code_Example.md) |
+| 33 · Karpenter Node Autoprovisioning | [📖](./02_Kubernetes/33_Karpenter_Node_Autoprovisioning/Theory.md) | [⚡](./02_Kubernetes/33_Karpenter_Node_Autoprovisioning/Cheatsheet.md) | [🎯](./02_Kubernetes/33_Karpenter_Node_Autoprovisioning/Interview_QA.md) | [💻](./02_Kubernetes/33_Karpenter_Node_Autoprovisioning/Code_Example.md) |
+| 34 · eBPF & Cilium | [📖](./02_Kubernetes/34_eBPF_and_Cilium/Theory.md) | [⚡](./02_Kubernetes/34_eBPF_and_Cilium/Cheatsheet.md) | [🎯](./02_Kubernetes/34_eBPF_and_Cilium/Interview_QA.md) | — |
+| 35 · Ephemeral Containers & Debug | [📖](./02_Kubernetes/35_Ephemeral_Containers_and_Debug/Theory.md) | [⚡](./02_Kubernetes/35_Ephemeral_Containers_and_Debug/Cheatsheet.md) | [🎯](./02_Kubernetes/35_Ephemeral_Containers_and_Debug/Interview_QA.md) | [💻](./02_Kubernetes/35_Ephemeral_Containers_and_Debug/Code_Example.md) |
+| 36 · ValidatingAdmissionPolicy | [📖](./02_Kubernetes/36_ValidatingAdmissionPolicy/Theory.md) | [⚡](./02_Kubernetes/36_ValidatingAdmissionPolicy/Cheatsheet.md) | [🎯](./02_Kubernetes/36_ValidatingAdmissionPolicy/Interview_QA.md) | [💻](./02_Kubernetes/36_ValidatingAdmissionPolicy/Code_Example.md) |
+| 37 · Native Sidecar Containers | [📖](./02_Kubernetes/37_Native_Sidecar_Containers/Theory.md) | [⚡](./02_Kubernetes/37_Native_Sidecar_Containers/Cheatsheet.md) | [🎯](./02_Kubernetes/37_Native_Sidecar_Containers/Interview_QA.md) | [💻](./02_Kubernetes/37_Native_Sidecar_Containers/Code_Example.md) |
 
 </details>
 
@@ -253,7 +271,7 @@ Every topic follows the same format:
 
 <div align="center">
 
-## 📦 What Every Topic Includes
+### 📦 What Every Topic Includes
 
 </div>
 
@@ -268,11 +286,13 @@ Every topic follows the same format:
 
 </div>
 
+
+
 <img src="./assets/divider.svg" width="100%"/>
 
 <div align="center">
 
-## 🚀 Start Here
+### 🚀 Start Here
 
 </div>
 
@@ -286,9 +306,9 @@ Every topic follows the same format:
 
 **Track your progress** → [Progress Tracker](./00_Learning_Guide/Progress_Tracker.md)
 
-<img src="./assets/divider.svg" width="100%"/>
-
 <div align="center">
+
+<img src="./assets/divider.svg" width="100%"/>
 
 *Docker · Kubernetes · Zero to Production · Story-Based Learning*
 
