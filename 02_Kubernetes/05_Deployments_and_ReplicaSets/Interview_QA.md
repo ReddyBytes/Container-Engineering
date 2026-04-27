@@ -151,7 +151,7 @@ pod with the same label. This ensures pods are unambiguously assigned to the cor
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

@@ -14,6 +14,22 @@ The good news is that Kubernetes is designed for operational continuity. You can
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Node Lifecycle](#node-lifecycle-cordon-drain-uncordon) · [Cluster Upgrade Strategy](#cluster-upgrade-strategy) · [etcd Backup and Restore](#etcd-backup-and-restore)
+
+**Should Learn** — important for real projects and interviews:
+[Certificate Rotation](#certificate-rotation) · [Cluster Health Monitoring](#cluster-health-monitoring)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Node Replacement](#node-replacement-strategy) · [Multi-Cluster Management](#multi-cluster-management)
+
+**Reference** — skim once, look up when needed:
+[etcd Quorum and Sizing](#etcd-quorum-and-cluster-size)
+
+---
+
 ## Node Lifecycle: Cordon, Drain, Uncordon
 
 The three-command sequence for taking a node out of service safely.
@@ -347,6 +363,15 @@ etcd uses the Raft consensus protocol and requires a quorum (majority) of member
 | 7 | 3 — rarely needed |
 
 Always run an odd number of etcd members. Even numbers don't increase fault tolerance but do increase write latency.
+
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q73 · cluster-upgrades](../kubernetes_practice_questions_100.md#q73--thinking--cluster-upgrades)
+
 
 ---
 

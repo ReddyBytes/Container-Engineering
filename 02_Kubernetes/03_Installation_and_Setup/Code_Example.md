@@ -263,7 +263,7 @@ alias kdf='kubectl delete -f'
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

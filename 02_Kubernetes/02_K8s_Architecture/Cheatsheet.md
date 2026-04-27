@@ -145,7 +145,7 @@ journalctl -u containerd -f
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

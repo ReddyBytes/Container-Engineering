@@ -13,6 +13,22 @@ Before RBAC existed (pre-1.6), Kubernetes had simpler, coarser authorization mod
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Four Core Components](#the-four-core-components) · [RBAC Authorization Flow](#rbac-authorization-flow) · [Namespaced vs Cluster-Wide](#namespaced-vs-cluster-wide-resources)
+
+**Should Learn** — important for real projects and interviews:
+[Debugging with can-i](#debugging-rbac-kubectl-auth-can-i) · [Common Mistakes](#common-rbac-mistakes) · [Security Best Practices](#security-best-practices)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Built-in ClusterRoles](#built-in-default-clusterroles) · [Common Verbs Reference](#common-rbac-verbs-reference)
+
+**Reference** — skim once, look up when needed:
+[Aggregated ClusterRoles](#aggregated-clusterroles)
+
+---
+
 ## Why RBAC Matters
 
 Consider a cluster shared by three teams:
@@ -210,8 +226,19 @@ kubectl auth can-i --list --as=alice --namespace=staging
 - Regularly audit bindings: `kubectl get rolebindings,clusterrolebindings -A`
 - Never mount the default service account token if the app doesn't need it: `automountServiceAccountToken: false`
 
+
 ---
 
+## 📝 Practice Questions
+
+- 📝 [Q29 · rbac-basics](../kubernetes_practice_questions_100.md#q29--normal--rbac-basics)
+- 📝 [Q30 · roles-clusterroles](../kubernetes_practice_questions_100.md#q30--thinking--roles-clusterroles)
+- 📝 [Q80 · explain-rbac](../kubernetes_practice_questions_100.md#q80--interview--explain-rbac)
+
+
+---
+
+🚀 **Apply this:** Configure RBAC in a production cluster → [Project 06 — Production K8s Cluster](../../05_Capstone_Projects/06_Production_K8s_Cluster/01_MISSION.md)
 ## 📂 Navigation
 
 | | Link |

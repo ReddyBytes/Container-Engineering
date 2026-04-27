@@ -15,6 +15,22 @@ with Kubernetes. Let's walk through it.
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Control Plane and Nodes](#the-two-halves-control-plane-and-worker-nodes) · [Control Plane Components](#control-plane-components) · [Worker Node Components](#worker-node-components)
+
+**Should Learn** — important for real projects and interviews:
+[Pod Scheduling Journey](#how-a-pod-gets-scheduled----the-full-journey) · [etcd Source of Truth](#etcd-as-the-single-source-of-truth)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[High Availability Topology](#high-availability-topology)
+
+**Reference** — skim once, look up when needed:
+[Architecture Concepts Summary](#key-architecture-concepts-summary)
+
+---
+
 ## The Two Halves: Control Plane and Worker Nodes
 
 A Kubernetes cluster is divided into two logical layers:
@@ -272,9 +288,18 @@ Worker nodes can be added or removed at will. The control plane is the part that
 | kube-proxy | Every Node | Implements Service networking |
 | Container Runtime | Every Node | Actually runs containers (containerd, CRI-O) |
 
+
+
 ---
 
-## Navigation
+## 📝 Practice Questions
+
+- 📝 [Q72 · etcd-operations](../kubernetes_practice_questions_100.md#q72--thinking--etcd-operations)
+
+
+---
+
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

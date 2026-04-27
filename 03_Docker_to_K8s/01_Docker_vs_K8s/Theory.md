@@ -10,6 +10,22 @@ That control system is Kubernetes.
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Docker vs Kubernetes](#kubernetes-runs-containers-across-many-machines) · [Compose Limitations](#what-docker-compose-cannot-do) · [Vocabulary Shift](#the-vocabulary-shift)
+
+**Should Learn** — important for real projects and interviews:
+[When to Use Kubernetes](#when-you-need-kubernetes) · [K8s Doesn't Replace Docker](#k8s-doesnt-replace-docker)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[When Compose Is Enough](#when-docker-compose-is-enough)
+
+**Reference** — skim once, look up when needed:
+[Docker Single Host Diagram](#kubernetes-runs-containers-across-many-machines)
+
+---
+
 ## Docker Runs Containers on ONE Machine
 
 Docker is brilliant at what it does. It:
@@ -138,6 +154,7 @@ When moving from Docker to Kubernetes, some concepts have new names:
 
 ---
 
+🚀 **Apply this:** Deploy your first containerized app to K8s → [Project 03 — Deploy App to Kubernetes](../../05_Capstone_Projects/03_Deploy_App_to_Kubernetes/01_MISSION.md)
 ## 📂 Navigation
 
 | | Link |

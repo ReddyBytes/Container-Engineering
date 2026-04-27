@@ -14,6 +14,22 @@ They are correct. The networking model that powered Kubernetes since its earlies
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[eBPF Overview](#ebpf-a-programmable-kernel) · [Cilium CNI](#cilium-ebpf-based-cni-for-kubernetes) · [kube-proxy Replacement](#kube-proxy-replacement)
+
+**Should Learn** — important for real projects and interviews:
+[L7 NetworkPolicy](#l7-networkpolicy) · [Hubble Observability](#hubble-built-in-network-observability) · [CNI Comparison](#comparison-flannel-vs-calico-vs-cilium)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Transparent Encryption](#transparent-encryption-wireguard) · [Tetragon Security](#tetragon-runtime-security-with-ebpf)
+
+**Reference** — skim once, look up when needed:
+[iptables Problem](#traditional-kubernetes-networking-the-iptables-problem) · [Installation](#installation)
+
+---
+
 ## Traditional Kubernetes Networking: The iptables Problem
 
 Every Kubernetes cluster needs a way to load balance traffic to Services. The default implementation is **kube-proxy**, which runs as a DaemonSet and programs iptables rules on every node.
@@ -272,6 +288,14 @@ helm install cilium cilium/cilium \
 ## Summary
 
 eBPF is the most significant change to Linux kernel networking in a decade. It gives Cilium the ability to implement Kubernetes networking at O(1) performance, enforce security policies at the L7 HTTP/gRPC level, provide encryption without service mesh complexity, and deliver full network observability through Hubble — all without modifying application code or adding sidecar containers. In 2024, Cilium is the default or recommended CNI on every major managed Kubernetes service. Understanding eBPF and Cilium is no longer optional knowledge for Kubernetes practitioners.
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q69 · ebpf-cilium](../kubernetes_practice_questions_100.md#q69--thinking--ebpf-cilium)
+
 
 ---
 

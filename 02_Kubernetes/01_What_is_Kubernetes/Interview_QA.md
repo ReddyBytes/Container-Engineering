@@ -130,7 +130,7 @@ undo` to revert to the previous version instantly.
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

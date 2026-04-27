@@ -188,7 +188,7 @@ kubectl run dns-test --image=busybox --rm -it --restart=Never -- nslookup kubern
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

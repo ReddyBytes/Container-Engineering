@@ -12,6 +12,22 @@ Without multi-stage builds, a typical Go app image might be 1 GB. With multi-sta
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Multi-Stage Builds: The Solution](#multi-stage-builds-the-solution) · [FROM ... AS Syntax](#the-from--as-syntax) · [COPY --from=builder](#copy---frombuilder)
+
+**Should Learn** — important for real projects and interviews:
+[Common Patterns](#common-patterns) · [Building Specific Stages with --target](#building-specific-stages-with---target) · [Typical Size Reductions](#typical-size-reductions)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Parallel Stages](#parallel-stages-independent-build-stages) · [Builder Cache](#builder-cache-how-it-interacts-with-multi-stage)
+
+**Reference** — skim once, look up when needed:
+[What Are Dev Dependencies Doing in Prod?](#what-are-dev-dependencies-doing-in-prod)
+
+---
+
 ## What Are Dev Dependencies Doing in Prod?
 
 Let's look at what developers innocently include without realizing it:
@@ -271,8 +287,21 @@ RUN go build -o server .
 
 This ordering — copy dependency manifests first, then source code — is critical for fast builds.
 
+
 ---
 
+## 📝 Practice Questions
+
+- 📝 [Q27 · multi-stage-builds](../docker_practice_questions_100.md#q27--normal--multi-stage-builds)
+- 📝 [Q28 · build-args](../docker_practice_questions_100.md#q28--thinking--build-args)
+- 📝 [Q29 · image-size-optimization](../docker_practice_questions_100.md#q29--critical--image-size-optimization)
+- 📝 [Q47 · explain-multi-stage](../docker_practice_questions_100.md#q47--interview--explain-multi-stage)
+- 📝 [Q48 · scenario-image-too-large](../docker_practice_questions_100.md#q48--design--scenario-image-too-large)
+
+
+---
+
+🚀 **Apply this:** Put multi-stage builds into practice → [Project 01 — Dockerize a Python App](../../05_Capstone_Projects/01_Dockerize_a_Python_App/01_MISSION.md)
 ## 📂 Navigation
 
 | | Link |

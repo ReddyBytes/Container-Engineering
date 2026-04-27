@@ -22,6 +22,22 @@ clusters for every team or environment.
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[What is a Namespace](#what-is-a-namespace) · [Default Namespaces](#default-namespaces) · [kubectl with Namespaces](#kubectl-with-namespaces)
+
+**Should Learn** — important for real projects and interviews:
+[Namespace Strategies](#common-namespace-strategies) · [Resource Quotas](#resource-quotas-per-namespace)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Cross-Namespace Communication](#cross-namespace-communication) · [LimitRange](#limitrange-default-limits-for-pods)
+
+**Reference** — skim once, look up when needed:
+[What Is NOT Namespaced](#what-is-not-namespaced) · [Terminating State](#namespace-lifecycle-and-terminating-state)
+
+---
+
 ## What is a Namespace?
 
 A namespace is a **virtual partition** within a cluster — a logical boundary that provides
@@ -267,9 +283,19 @@ kubectl get namespace stuck-ns -o json \
   | kubectl replace --raw /api/v1/namespaces/stuck-ns/finalize -f -
 ```
 
+
 ---
 
-## Navigation
+## 📝 Practice Questions
+
+- 📝 [Q21 · namespaces](../kubernetes_practice_questions_100.md#q21--normal--namespaces)
+- 📝 [Q22 · namespace-isolation](../kubernetes_practice_questions_100.md#q22--thinking--namespace-isolation)
+- 📝 [Q90 · scenario-multi-tenant](../kubernetes_practice_questions_100.md#q90--design--scenario-multi-tenant)
+
+
+---
+
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

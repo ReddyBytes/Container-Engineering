@@ -136,7 +136,7 @@ kubectl get pods --show-labels
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

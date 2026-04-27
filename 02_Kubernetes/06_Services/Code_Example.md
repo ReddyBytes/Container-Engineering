@@ -287,7 +287,7 @@ kubectl run test --image=busybox --rm -it --restart=Never -- \
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

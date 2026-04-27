@@ -156,7 +156,7 @@ kubectl describe pod <pending-pod>
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

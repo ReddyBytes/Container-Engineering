@@ -178,7 +178,7 @@ an object storage system (S3, GCS) and have your application fetch them at start
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

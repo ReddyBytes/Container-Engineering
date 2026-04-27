@@ -356,7 +356,7 @@ kubectl describe certificate api-yourdomain-tls
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

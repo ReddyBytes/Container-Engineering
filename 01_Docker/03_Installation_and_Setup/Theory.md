@@ -8,6 +8,22 @@ Installing Docker is exactly that: setting up your workshop before the real work
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[What You're Actually Installing](#understanding-what-youre-actually-installing) · [Post-Install Steps (Linux)](#post-install-critical-steps-linux) · [First Container Explained](#your-first-container-docker-run-hello-world-explained)
+
+**Should Learn** — important for real projects and interviews:
+[Linux Installation](#installation-linux-ubuntudebian) · [macOS Installation](#installation-macos-docker-desktop) · [Key Docker Directories](#key-directories-where-docker-stores-things)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Docker Contexts](#docker-contexts) · [Windows WSL2 Setup](#installation-windows-wsl2)
+
+**Reference** — skim once, look up when needed:
+[Common Installation Pitfalls](#common-installation-pitfalls) · [Desktop vs Engine vs CLI](#docker-desktop-vs-docker-engine-vs-docker-cli)
+
+---
+
 ## Understanding What You're Actually Installing
 
 The phrase "install Docker" is ambiguous. Depending on your platform and use case, you might be installing very different things:
@@ -317,6 +333,15 @@ File I/O between the macOS filesystem and the Linux VM is the bottleneck. Use Do
 - Add your user to the `docker` group for non-sudo access, but understand the security implications.
 - `/var/lib/docker/` is where Docker stores all its data — images, containers, volumes.
 - Docker contexts let you manage multiple remote Docker daemons from one CLI.
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q4 · docker-install](../docker_practice_questions_100.md#q4--normal--docker-install)
+- 📝 [Q5 · docker-hello-world](../docker_practice_questions_100.md#q5--thinking--docker-hello-world)
+
 
 ---
 

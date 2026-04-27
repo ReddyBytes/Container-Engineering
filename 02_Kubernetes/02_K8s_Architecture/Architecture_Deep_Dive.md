@@ -321,7 +321,7 @@ sequenceDiagram
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

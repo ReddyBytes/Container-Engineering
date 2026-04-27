@@ -138,7 +138,7 @@ The API server then uses RBAC to determine what the authenticated identity is al
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

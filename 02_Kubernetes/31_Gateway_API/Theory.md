@@ -19,6 +19,22 @@ This was the lived experience of Kubernetes users for years. **Gateway API** is 
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Core Resources](#core-resources) · [Role Separation](#role-separation-a-key-design-principle) · [HTTPRoute Basics](#httproute)
+
+**Should Learn** — important for real projects and interviews:
+[Traffic Splitting](#traffic-splitting-canary-deployments) · [Header-Based Routing](#header-based-routing-ab-testing) · [Ingress vs Gateway API](#ingress-vs-gateway-api-comparison)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Non-HTTP Routes](#non-http-routes) · [Request Mirroring](#request-mirroring) · [Supported Implementations](#supported-implementations)
+
+**Reference** — skim once, look up when needed:
+[Migration from Ingress](#migration-from-ingress-to-gateway-api) · [Getting Started](#getting-started)
+
+---
+
 ## The Problem With Ingress
 
 Kubernetes Ingress (introduced in 1.1, stable in 1.19) was designed as a minimal abstraction for HTTP/HTTPS routing. It got the job done for simple cases, but its limitations became glaring at scale:
@@ -322,6 +338,15 @@ helm install ngf oci://ghcr.io/nginx/charts/nginx-gateway-fabric \
 ## Summary
 
 Gateway API is not just an upgrade to Ingress — it is a fundamentally better model for managing traffic in Kubernetes. It separates concerns between teams, supports all protocols, brings traffic management features into the spec instead of annotations, and is portable across every major implementation. If you are building a new cluster today, Gateway API is where you start.
+
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q70 · gateway-api-advanced](../kubernetes_practice_questions_100.md#q70--thinking--gateway-api-advanced)
+
 
 ---
 

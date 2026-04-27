@@ -14,6 +14,22 @@ The good news: once you can see where the waste is, fixing it is straightforward
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Cost Drivers](#understanding-kubernetes-cost-drivers) · [Right-Sizing with VPA](#right-sizing-vpa-recommendations) · [Karpenter vs Cluster Autoscaler](#karpenter-vs-cluster-autoscaler)
+
+**Should Learn** — important for real projects and interviews:
+[Spot Instances](#spot--preemptible-instances) · [Namespace Quotas](#namespace-resource-quotas)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Kubecost Visibility](#kubecost-cost-visibility) · [Cost Labels](#cost-allocation-with-labels)
+
+**Reference** — skim once, look up when needed:
+[Cleanup Commands](#cleanup-delete-unused-resources) · [Image Size Optimization](#image-size-and-pull-costs)
+
+---
+
 ## Understanding Kubernetes Cost Drivers
 
 ### 1. Over-Provisioned Pods
@@ -361,6 +377,14 @@ COPY --from=builder /app/node_modules ./node_modules
 ```
 
 Smaller images = faster pod starts = faster autoscaling response = lower cost.
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q60 · cost-optimization](../kubernetes_practice_questions_100.md#q60--normal--cost-optimization)
+
 
 ---
 

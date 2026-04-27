@@ -150,7 +150,7 @@ Note: restart policy applies to the entire Pod, not individual containers.
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

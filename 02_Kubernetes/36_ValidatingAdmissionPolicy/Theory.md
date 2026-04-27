@@ -14,6 +14,22 @@ Then Kubernetes 1.30 (April 2024) shipped **ValidatingAdmissionPolicy (VAP)** as
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[VAP vs Webhooks](#validatingadmissionpolicy-policies-in-the-api-server) · [Core Resources](#core-resources) · [CEL Expressions](#cel-expression-language)
+
+**Should Learn** — important for real projects and interviews:
+[Validation Actions](#validation-actions-deny-warn-audit) · [VAP vs Kyverno vs OPA](#vap-vs-kyverno-vs-opagatekeeper) · [Parameterized Policies](#parameterized-policies-with-paramkind)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[MatchConditions](#matchconditions-pre-filtering) · [Message Expressions](#message-expressions)
+
+**Reference** — skim once, look up when needed:
+[Admission Control Pipeline](#admission-control-pipeline) · [Old Webhook Approach](#the-old-way-webhook-based-admission-control)
+
+---
+
 ## The Old Way: Webhook-Based Admission Control
 
 Before VAP, policy enforcement required **admission webhooks**:
@@ -349,6 +365,14 @@ VAP runs as part of the validating admission phase — after mutating webhooks (
 ValidatingAdmissionPolicy represents the maturation of Kubernetes policy enforcement. By moving CEL-based validation directly into the API server, it eliminates the operational complexity of webhook servers for the most common use case (validation). For mutation and complex generation logic, Kyverno remains the practical choice.
 
 For any new Kubernetes 1.30+ cluster, VAP should be the first tool you reach for when adding policy guardrails.
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q75 · validating-admission](../kubernetes_practice_questions_100.md#q75--thinking--validating-admission)
+
 
 ---
 

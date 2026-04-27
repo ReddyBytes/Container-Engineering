@@ -16,6 +16,22 @@ Docker Swarm is Docker's built-in answer to this problem. No separate installati
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[What Is Docker Swarm?](#what-is-docker-swarm) · [Swarm Concepts](#swarm-concepts) · [Services: docker service create](#services-docker-service-create)
+
+**Should Learn** — important for real projects and interviews:
+[Stacks: Deploying Compose Files](#stacks-deploying-compose-files) · [Overlay Networks in Swarm](#overlay-networks-in-swarm) · [Swarm Secrets](#swarm-secrets)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Initializing a Swarm](#initializing-a-swarm) · [Adding Nodes](#adding-nodes)
+
+**Reference** — skim once, look up when needed:
+[Swarm vs Kubernetes](#swarm-vs-kubernetes-when-swarm-is-enough)
+
+---
+
 ## What Is Docker Swarm?
 
 Docker Swarm is Docker's native clustering and orchestration tool. It turns a group of Docker hosts into a single, virtual Docker host. You talk to the Swarm the same way you talk to a single Docker host — the Swarm figures out where to actually run your containers.
@@ -265,6 +281,16 @@ Swarm is simpler and sufficient for many real-world use cases. Kubernetes is mor
 | Advanced networking needed | Basic service discovery OK | Need Ingress, network policies, service mesh |
 
 A common path: start with Swarm for simplicity, migrate to Kubernetes when you outgrow it. The concepts transfer well.
+
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q87 · compare-swarm-k8s](../docker_practice_questions_100.md#q87--interview--compare-swarm-k8s)
+- 📝 [Q90 · scenario-zero-downtime](../docker_practice_questions_100.md#q90--design--scenario-zero-downtime)
+
 
 ---
 

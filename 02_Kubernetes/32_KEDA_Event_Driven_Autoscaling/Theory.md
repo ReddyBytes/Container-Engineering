@@ -16,6 +16,22 @@ This is the problem KEDA was built to solve.
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[What Is KEDA](#what-is-keda) · [ScaledObject](#scaledobject-the-core-resource) · [How KEDA Works](#how-keda-works)
+
+**Should Learn** — important for real projects and interviews:
+[Scale to Zero](#scale-to-zero-kedas-killer-feature) · [Supported Scalers](#supported-scalers-50) · [KEDA vs HPA](#keda-vs-hpa-comparison)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[ScaledJob](#scaledjob-for-batch-workloads) · [Multiple Triggers](#multiple-triggers-scale-on-the-most-demanding-metric)
+
+**Reference** — skim once, look up when needed:
+[TriggerAuthentication](#triggerauthentication-secure-credentials) · [Installation](#installation)
+
+---
+
 ## What Is KEDA?
 
 **KEDA** (Kubernetes Event Driven Autoscaling) is a CNCF-graduated project that enables Kubernetes to scale workloads based on external event sources — not just CPU and memory.
@@ -294,6 +310,15 @@ kubectl get pods -n keda
 ## Summary
 
 KEDA solves the fundamental gap in Kubernetes autoscaling: HPA only knows about CPU and memory, but most real workloads scale based on business signals — queue depth, consumer lag, Prometheus metrics, or a cron schedule. KEDA connects these signals to the Kubernetes scaling machinery, adds the ability to scale to zero, and does so as a graduated CNCF project that is production-ready in 2024. If you run any queue-based, event-driven, or batch workloads on Kubernetes, KEDA should be in your toolkit.
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q67 · keda](../kubernetes_practice_questions_100.md#q67--thinking--keda)
+- 📝 [Q87 · compare-hpa-vpa-keda](../kubernetes_practice_questions_100.md#q87--interview--compare-hpa-vpa-keda)
+
 
 ---
 

@@ -20,6 +20,22 @@ That stable address is a **Service**.
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[What is a Service](#what-is-a-service) · [Service Types](#service-types) · [Label Selectors](#how-services-find-pods-label-selectors)
+
+**Should Learn** — important for real projects and interviews:
+[DNS for Services](#dns-for-services) · [kube-proxy Internals](#kube-proxy-how-services-actually-work)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Headless Services](#headless-services) · [Port Terminology](#service-port-terminology)
+
+**Reference** — skim once, look up when needed:
+[ExternalName Type](#externalname)
+
+---
+
 ## What is a Service?
 
 A Service is a Kubernetes object that provides:
@@ -240,9 +256,23 @@ ports:
 
 When a service has multiple ports, you must name each one.
 
+
 ---
 
-## Navigation
+## 📝 Practice Questions
+
+- 📝 [Q15 · services-basics](../kubernetes_practice_questions_100.md#q15--normal--services-basics)
+- 📝 [Q16 · clusterip-nodeport-lb](../kubernetes_practice_questions_100.md#q16--normal--clusterip-nodeport-lb)
+- 📝 [Q17 · service-discovery](../kubernetes_practice_questions_100.md#q17--normal--service-discovery)
+- 📝 [Q78 · explain-services](../kubernetes_practice_questions_100.md#q78--interview--explain-services)
+- 📝 [Q82 · scenario-service-unreachable](../kubernetes_practice_questions_100.md#q82--design--scenario-service-unreachable)
+- 📝 [Q92 · predict-service-routing](../kubernetes_practice_questions_100.md#q92--logical--predict-service-routing)
+- 📝 [Q99 · edge-case-headless-service](../kubernetes_practice_questions_100.md#q99--critical--edge-case-headless-service)
+
+
+---
+
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

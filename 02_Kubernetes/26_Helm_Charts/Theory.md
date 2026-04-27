@@ -23,6 +23,22 @@ One command. Helm handles all the Kubernetes objects, injects your configuration
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Chart Structure](#what-is-a-helm-chart) · [values.yaml Config](#valuesyaml----the-configuration-layer) · [Core Helm Commands](#core-helm-commands)
+
+**Should Learn** — important for real projects and interviews:
+[Go Template Syntax](#templates----go-templating) · [Releases and Rollback](#releases-the-tracking-layer)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Helm Hooks](#helm-hooks) · [Helmfile Multi-Chart](#helmfile-managing-multiple-charts)
+
+**Reference** — skim once, look up when needed:
+[Subcharts and Dependencies](#subcharts-and-dependencies)
+
+---
+
 ## What Is a Helm Chart?
 
 A Helm chart is a packaged collection of Kubernetes manifests with a template engine layered on top. It contains:
@@ -350,6 +366,15 @@ helmfile sync       # apply all releases
 helmfile diff       # show what would change
 helmfile destroy    # uninstall all
 ```
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q52 · helm-basics](../kubernetes_practice_questions_100.md#q52--normal--helm-basics)
+- 📝 [Q53 · helm-charts](../kubernetes_practice_questions_100.md#q53--normal--helm-charts)
+
 
 ---
 

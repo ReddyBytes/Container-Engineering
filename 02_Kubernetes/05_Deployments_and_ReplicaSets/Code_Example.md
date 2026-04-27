@@ -256,7 +256,7 @@ kubectl get pods --watch
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

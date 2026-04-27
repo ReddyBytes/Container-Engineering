@@ -10,6 +10,22 @@ This matters in production. An ops engineer who doesn't understand restart polic
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Container States](#container-states) · [docker run Flags](#docker-run-flags-deep-dive) · [Restart Policies](#restart-policies-explained)
+
+**Should Learn** — important for real projects and interviews:
+[exec vs attach](#docker-exec-vs-docker-attach) · [Container Logs](#container-logs) · [Inspecting Containers](#inspecting-containers)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Resource Limits](#resource-limits) · [Copying Files](#copying-files)
+
+**Reference** — skim once, look up when needed:
+[Cleanup Commands](#cleanup) · [Lifecycle State Diagram](#lifecycle-state-diagram)
+
+---
+
 ## Container States
 
 A container can be in one of five states:
@@ -324,6 +340,16 @@ docker restart --time 5 my-nginx   # 5-second grace before kill
 - `docker logs -f --tail 100` is your first debugging tool for a misbehaving container.
 - `docker inspect` gives you everything: container state, IPs, mounts, environment, restart policy.
 - Always clean up stopped containers with `docker container prune` to avoid accumulation.
+
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q60 · container-resource-limits](../docker_practice_questions_100.md#q60--thinking--container-resource-limits)
+- 📝 [Q64 · container-logging](../docker_practice_questions_100.md#q64--thinking--container-logging)
+
 
 ---
 

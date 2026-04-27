@@ -14,6 +14,22 @@ Understanding this chain isn't just academic — when something goes wrong (and 
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Docker Engine Components](#the-components-of-docker-engine) · [runc and containerd roles](#3-containerd) · [Architecture Diagram](#architecture-diagram)
+
+**Should Learn** — important for real projects and interviews:
+[Image Layers and OverlayFS](#image-layers-and-the-union-filesystem) · [Docker Registries](#docker-registries) · [End-to-End Sequence](#sequence-diagram-docker-run-nginx-end-to-end)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Docker Socket Security](#the-docker-socket-and-why-its-a-security-concern) · [containerd-shim](#5-shim-containerd-shim)
+
+**Reference** — skim once, look up when needed:
+[Common Misconceptions](#common-misconceptions)
+
+---
+
 ## The Components of Docker Engine
 
 Docker is not a single program. It's a layered set of components, each with a specific responsibility. When people say "Docker," they usually mean the whole stack:
@@ -237,6 +253,16 @@ Docker Desktop on macOS and Windows runs a lightweight Linux VM in the backgroun
 - Images are stacked read-only layers; containers add a writable layer on top (OverlayFS/CoW).
 - The Docker socket grants root-equivalent access — protect it carefully.
 - Kubernetes bypasses dockerd and talks directly to containerd via CRI.
+
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q71 · container-runtime](../docker_practice_questions_100.md#q71--thinking--container-runtime)
+- 📝 [Q86 · compare-docker-podman](../docker_practice_questions_100.md#q86--interview--compare-docker-podman)
+
 
 ---
 

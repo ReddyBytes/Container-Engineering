@@ -12,6 +12,22 @@ Without health probes, Kubernetes has no way to know the difference between a he
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Three Types of Probes](#three-types-of-probes) · [Probe Decision Flow](#probe-decision-flow) · [Key Configuration Parameters](#key-configuration-parameters)
+
+**Should Learn** — important for real projects and interviews:
+[Common Mistakes](#common-mistakes) · [Probe Parameters Tuning](#probe-parameters-tuning-guide)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Four Probe Mechanisms](#four-probe-mechanisms)
+
+**Reference** — skim once, look up when needed:
+[gRPC Probes](#grpc)
+
+---
+
 ## Three Types of Probes
 
 Kubernetes offers three distinct probe types, each answering a different question:
@@ -168,6 +184,18 @@ For a liveness probe with `periodSeconds: 10, failureThreshold: 3`, a dead app w
 3. **Readiness probe checks downstream dependencies**: If your readiness probe calls your database, and the database is slow, Kubernetes removes your pod from the load balancer. Now your users get connection errors instead of slow responses. Keep readiness probes local — check local state only.
 4. **initialDelaySeconds too short**: App gets killed before it finishes starting. Use a startup probe instead.
 5. **timeoutSeconds too short**: The health endpoint takes 2 seconds but `timeoutSeconds: 1` means it always times out, triggering restarts.
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q34 · health-probes](../kubernetes_practice_questions_100.md#q34--normal--health-probes)
+- 📝 [Q35 · liveness-readiness](../kubernetes_practice_questions_100.md#q35--normal--liveness-readiness)
+- 📝 [Q36 · startup-probe](../kubernetes_practice_questions_100.md#q36--normal--startup-probe)
+- 📝 [Q81 · scenario-pod-crashloop](../kubernetes_practice_questions_100.md#q81--design--scenario-pod-crashloop)
+- 📝 [Q91 · predict-pod-restart](../kubernetes_practice_questions_100.md#q91--logical--predict-pod-restart)
+
 
 ---
 

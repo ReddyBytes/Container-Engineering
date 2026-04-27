@@ -12,6 +12,22 @@ How? They use a combination of deployment strategies, each suited to a different
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[RollingUpdate Strategy](#strategy-2-rollingupdate-kubernetes-default) · [Blue/Green Strategy](#strategy-3-bluegreen-instant-cutover) · [Strategy Comparison](#strategy-comparison-table)
+
+**Should Learn** — important for real projects and interviews:
+[Canary Strategy](#strategy-4-canary-small--first) · [Recreate Strategy](#strategy-1-recreate-simple-but-destructive)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[A/B Testing](#strategy-5-ab-testing-route-by-user-attribute) · [Flagger and Argo Rollouts](#advanced-flagger-and-argo-rollouts)
+
+**Reference** — skim once, look up when needed:
+[Why Strategy Matters](#why-deployment-strategy-matters)
+
+---
+
 ## Why Deployment Strategy Matters
 
 The naive approach to updating software:
@@ -220,6 +236,16 @@ Both tools implement automated canary analysis: if the error rate on the canary 
 | Blue/Green | No | Instant | 2x | Medium |
 | Canary | No | Fast | 1.1-1.5x | Medium-High |
 | A/B Testing | No | Fast | 1.1-1.5x | High |
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q37 · deployment-strategies](../kubernetes_practice_questions_100.md#q37--normal--deployment-strategies)
+- 📝 [Q38 · blue-green-canary](../kubernetes_practice_questions_100.md#q38--normal--blue-green-canary)
+- 📝 [Q89 · scenario-zero-downtime-deploy](../kubernetes_practice_questions_100.md#q89--design--scenario-zero-downtime-deploy)
+
 
 ---
 

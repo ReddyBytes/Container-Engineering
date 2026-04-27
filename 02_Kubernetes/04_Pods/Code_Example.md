@@ -312,7 +312,7 @@ kubectl delete pod probed-pod
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

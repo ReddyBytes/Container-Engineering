@@ -30,7 +30,7 @@ Container-Engineering/
 │   ├── 02_Compose_to_K8s_Migration/
 │   └── 03_Image_to_Deployment_Workflow/
 │
-└── 04_Projects/                ← 6 end-to-end hands-on projects
+└── 05_Capstone_Projects/                ← 6 end-to-end hands-on projects
     ├── 01_Dockerize_a_Python_App/
     ├── 02_Multi_Container_App_Compose/
     ├── 03_Deploy_App_to_Kubernetes/

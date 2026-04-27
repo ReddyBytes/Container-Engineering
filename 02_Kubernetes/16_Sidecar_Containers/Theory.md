@@ -14,6 +14,22 @@ This pattern is so powerful that entire infrastructure products — service mesh
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[What is a Sidecar](#what-is-a-sidecar) · [Common Sidecar Patterns](#common-sidecar-patterns) · [Init vs Sidecar](#init-containers-vs-sidecar-containers)
+
+**Should Learn** — important for real projects and interviews:
+[Pod Network Sharing](#pod-network-sharing) · [Native Sidecars 1.29](#native-sidecar-containers-kubernetes-129)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Ambassador Pattern](#the-ambassador-pattern) · [Adapter Pattern](#the-adapter-pattern)
+
+**Reference** — skim once, look up when needed:
+[When Not to Use Sidecars](#when-not-to-use-sidecars)
+
+---
+
 ## What is a Sidecar?
 
 A sidecar is any additional container in a pod that supports the main application container. Since all containers in a pod share:
@@ -155,6 +171,15 @@ Sidecars add overhead: each sidecar consumes CPU and memory, and adds operationa
 - **Use a library instead**: If you want metrics, a Prometheus client library in your app is simpler than a metrics-scraping sidecar.
 - **Use a DaemonSet**: For cluster-wide log collection from all containers' stdout, a DaemonSet is more efficient than a sidecar on every pod.
 - **Use a service mesh**: Istio/Linkerd automatically injects proxy sidecars — you don't need to add them manually.
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q39 · sidecar-containers](../kubernetes_practice_questions_100.md#q39--normal--sidecar-containers)
+- 📝 [Q40 · init-containers](../kubernetes_practice_questions_100.md#q40--normal--init-containers)
+
 
 ---
 

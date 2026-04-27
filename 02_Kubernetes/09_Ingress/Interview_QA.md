@@ -188,7 +188,7 @@ The nginx-ingress controller ships with a built-in default backend that serves a
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

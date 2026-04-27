@@ -173,7 +173,7 @@ kubectl exec <pod-name> -- cat /etc/config/app.properties
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

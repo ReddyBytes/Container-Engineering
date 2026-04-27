@@ -180,7 +180,7 @@ kubectl get namespace stuck-ns -o json \
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

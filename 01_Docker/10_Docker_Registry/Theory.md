@@ -10,6 +10,22 @@ Without registries, sharing container images would mean copying files over USB s
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Docker Hub](#docker-hub-the-default-registry) · [Image Naming Convention](#image-naming-convention) · [Tagging and Pushing Images](#tagging-and-pushing-images) · [Private Registries](#private-registries-where-production-lives)
+
+**Should Learn** — important for real projects and interviews:
+[Image Tagging Strategy](#image-tagging-strategy) · [Logging In](#logging-in-docker-login) · [ECR Quick Start](#ecr-quick-start-create-authenticate-push)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Image Vulnerability Scanning](#image-vulnerability-scanning) · [Registry Architecture Diagram](#registry-architecture-diagram)
+
+**Reference** — skim once, look up when needed:
+[ECR Native Scanning](#ecr-native-scanning) · [Trivy Commands](#trivy)
+
+---
+
 ## Docker Hub: The Default Registry
 
 Docker Hub (hub.docker.com) is Docker's own public registry and the default when you don't specify one. Every time you do `docker pull ubuntu` or `docker pull postgres:16`, you're talking to Docker Hub.
@@ -316,6 +332,15 @@ graph TD
     Dev -->|docker login| Registry
     CI -->|GITHUB_TOKEN / IAM| Registry
 ```
+
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q84 · scenario-registry-strategy](../docker_practice_questions_100.md#q84--design--scenario-registry-strategy)
+
 
 ---
 

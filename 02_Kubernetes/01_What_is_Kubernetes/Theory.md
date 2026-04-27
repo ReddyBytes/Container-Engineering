@@ -31,6 +31,22 @@ K and s) was built to solve.
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Data Center OS](#kubernetes-as-the-data-center-operating-system) · [Core Promises](#the-core-promises-of-kubernetes) · [Declarative Model](#the-declarative-model-explained)
+
+**Should Learn** — important for real projects and interviews:
+[Without vs With K8s](#without-k8s-vs-with-k8s) · [When NOT to Use](#when-not-to-use-kubernetes)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Brief History](#a-brief-history) · [Key Vocabulary](#key-vocabulary-summary)
+
+**Reference** — skim once, look up when needed:
+[What's Next](#whats-next)
+
+---
+
 ## Kubernetes as the "Data Center Operating System"
 
 Think about what an operating system does for a single computer: it abstracts the hardware, decides
@@ -213,9 +229,18 @@ You now understand *why* Kubernetes exists. In the next module, we'll open the h
 how K8s is actually built — the control plane, worker nodes, and how a simple `kubectl apply`
 command turns into a running container on a machine somewhere in your cluster.
 
+
 ---
 
-## Navigation
+## 📝 Practice Questions
+
+- 📝 [Q1 · what-is-k8s](../kubernetes_practice_questions_100.md#q1--normal--what-is-k8s)
+- 📝 [Q2 · k8s-vs-docker](../kubernetes_practice_questions_100.md#q2--normal--k8s-vs-docker)
+
+
+---
+
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

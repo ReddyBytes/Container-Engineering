@@ -21,6 +21,22 @@ And we'll briefly touch on the third pillar: **Traces** — following a request 
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Four Golden Signals](#the-four-golden-signals) · [Prometheus and Grafana](#metrics-stack-prometheus--grafana--alertmanager) · [Logging Stack](#logging-stack)
+
+**Should Learn** — important for real projects and interviews:
+[Loki vs EFK](#loki--promtail--grafana-lightweight-alternative) · [kubectl Log Commands](#kubectl-logging-commands)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Distributed Tracing](#distributed-tracing-opentelemetry-and-jaeger) · [kube-prometheus-stack Setup](#setting-up-kube-prometheus-stack-quick-start)
+
+**Reference** — skim once, look up when needed:
+[Observability Summary](#observability-summary)
+
+---
+
 ## The Four Golden Signals
 
 Before choosing any tool, understand what to measure. Google SRE defined the **four golden signals** — the most important metrics for any production system:
@@ -291,6 +307,14 @@ kubectl port-forward svc/kube-prometheus-stack-prometheus \
 | Traces | OpenTelemetry + Jaeger/Tempo | Which service in this chain is slow? |
 
 Production recommendation: start with Prometheus + Grafana for metrics, add Loki for logs. Tracing comes last — it requires app instrumentation.
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q50 · monitoring-logging](../kubernetes_practice_questions_100.md#q50--normal--monitoring-logging)
+
 
 ---
 

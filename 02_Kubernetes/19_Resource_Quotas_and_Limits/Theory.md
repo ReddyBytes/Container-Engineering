@@ -14,6 +14,22 @@ The solution has two layers. At the **pod level**, resource requests and limits 
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Requests vs Limits](#cpu-and-memory-requests-vs-limits) · [QoS Classes](#qos-classes) · [LimitRange vs ResourceQuota](#limitrange-vs-resourcequota----side-by-side)
+
+**Should Learn** — important for real projects and interviews:
+[OOMKilled Explained](#oomkilled-explained) · [ResourceQuota: Namespace Budget](#resourcequota----namespace-budget) · [LimitRange: Namespace Defaults](#limitrange----namespace-defaults)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[CPU Throttling Explained](#cpu-throttling-explained) · [ResourceQuota Object Counts](#resourcequota-and-object-counts)
+
+**Reference** — skim once, look up when needed:
+[CPU and Memory Units](#cpu-units-and-memory-units-reference)
+
+---
+
 ## CPU and Memory: Requests vs Limits
 
 Every container in Kubernetes can specify two resource numbers for each resource type (CPU and memory):
@@ -287,6 +303,16 @@ Production clusters should enforce resource requirements via LimitRange defaults
 | `512M` | 512 megabytes (1 M = 1,000,000 bytes) — slightly less than 512Mi |
 
 Use `Mi` and `Gi` (binary units) — they match how the Linux kernel reports memory.
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q44 · resource-quotas](../kubernetes_practice_questions_100.md#q44--normal--resource-quotas)
+- 📝 [Q45 · resource-limits](../kubernetes_practice_questions_100.md#q45--normal--resource-limits)
+- 📝 [Q96 · debug-oomkilled](../kubernetes_practice_questions_100.md#q96--debug--debug-oomkilled)
+
 
 ---
 

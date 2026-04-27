@@ -346,7 +346,7 @@ kubectl rollout restart statefulset/postgres
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

@@ -10,6 +10,22 @@ Security isn't something you bolt on at the end. It's a set of small decisions y
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Attack Surface](#the-attack-surface-what-can-go-wrong) · [Non-Root Users](#non-root-users-the-simplest-win) · [Secrets Management](#secrets-management-not-environment-variables)
+
+**Should Learn** — important for real projects and interviews:
+[Linux Capabilities](#linux-capabilities) · [Image Scanning](#image-scanning) · [Supply Chain Security](#supply-chain-security-base-images)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Read-Only Filesystems](#read-only-filesystems) · [Docker Socket Risk](#the-docker-socket-risk) · [Rootless Docker](#rootless-docker)
+
+**Reference** — skim once, look up when needed:
+[Seccomp and AppArmor Profiles](#seccomp-and-apparmor-profiles) · [Security Checklist](#security-checklist)
+
+---
+
 ## The Attack Surface: What Can Go Wrong
 
 Understanding the attack surface is the first step. Here are the major Docker security risks:
@@ -340,6 +356,18 @@ graph TD
     style H fill:#16a34a,color:#fff
     style I fill:#16a34a,color:#fff
 ```
+
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q65 · dockerfile-user](../docker_practice_questions_100.md#q65--critical--dockerfile-user)
+- 📝 [Q80 · explain-security-model](../docker_practice_questions_100.md#q80--interview--explain-security-model)
+- 📝 [Q82 · scenario-image-vulnerability](../docker_practice_questions_100.md#q82--design--scenario-image-vulnerability)
+- 📝 [Q89 · scenario-multi-tenant](../docker_practice_questions_100.md#q89--design--scenario-multi-tenant)
+
 
 ---
 

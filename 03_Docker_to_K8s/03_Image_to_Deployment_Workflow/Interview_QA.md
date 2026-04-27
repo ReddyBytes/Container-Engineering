@@ -351,7 +351,7 @@ kubectl debug node/<node-name> -it --image=busybox
 
 ## 📂 Navigation
 
-⬅️ **Prev:** [Compose to K8s Migration](../02_Compose_to_K8s_Migration/Interview_QA.md) &nbsp;&nbsp;&nbsp; ➡️ **Next:** [Projects](../../04_Projects/01_Dockerize_a_Python_App/Theory.md)
+⬅️ **Prev:** [Compose to K8s Migration](../02_Compose_to_K8s_Migration/Interview_QA.md) &nbsp;&nbsp;&nbsp; ➡️ **Next:** [Projects](../../05_Capstone_Projects/01_Dockerize_a_Python_App/01_MISSION.md)
 
 | File | Description |
 |---|---|

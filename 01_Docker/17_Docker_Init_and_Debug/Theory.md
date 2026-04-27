@@ -12,6 +12,22 @@ This module covers the Docker CLI features introduced in 2023-2024 that address 
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[docker init](#docker-init-scaffolding-that-actually-knows-what-its-doing) · [docker debug](#docker-debug-the-shell-thats-always-there)
+
+**Should Learn** — important for real projects and interviews:
+[Quality of Generated Dockerfiles](#the-quality-of-generated-dockerfiles) · [What docker debug Does](#what-docker-debug-does) · [containerd Image Store](#containerd-image-store)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[When to Use docker init vs Not](#when-to-use-docker-init-vs-not) · [docker debug vs kubectl debug](#docker-debug-vs-kubectl-debug) · [Docker Extensions](#docker-extensions)
+
+**Reference** — skim once, look up when needed:
+[Supported Project Types](#supported-project-types) · [Summary: What Changed and Why It Matters](#summary-what-changed-and-why-it-matters)
+
+---
+
 ## docker init: Scaffolding That Actually Knows What It's Doing
 
 `docker init` was released in Docker Desktop 4.19 (April 2023) and reached general availability with Docker Desktop 4.25 (November 2023). It is an interactive wizard that inspects your project and generates production-ready Docker configuration files.
@@ -409,6 +425,15 @@ Extensions are an optional quality-of-life improvement, not a core workflow comp
 | Docker Extensions | Docker Desktop 4.8 (2022) | No plugin ecosystem for Desktop |
 
 The theme across all of these: Docker is closing the gap between "what Docker experts know to do" and "what Docker gives you by default." `docker init` generates expert Dockerfiles automatically. `docker debug` makes minimal production images debuggable. The containerd store aligns Docker with the Kubernetes ecosystem.
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q69 · docker-init](../docker_practice_questions_100.md#q69--thinking--docker-init)
+- 📝 [Q70 · docker-debug](../docker_practice_questions_100.md#q70--thinking--docker-debug)
+
 
 ---
 

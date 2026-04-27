@@ -14,6 +14,22 @@ Backup and disaster recovery in Kubernetes is a layered problem. Your applicatio
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[What Needs Backing Up](#what-needs-backing-up-in-kubernetes) · [Velero Basics](#velero-the-standard-backup-tool) · [RTO and RPO Planning](#rto-and-rpo-planning)
+
+**Should Learn** — important for real projects and interviews:
+[etcd Backup Deep Dive](#etcd-backup-deep-dive) · [DR Scenarios](#disaster-recovery-scenarios)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Velero Hooks](#velero-hooks-quiesce-before-backup) · [Multi-Region Architecture](#multi-region-k8s-architecture)
+
+**Reference** — skim once, look up when needed:
+[Testing Your Backups](#testing-your-backups)
+
+---
+
 ## What Needs Backing Up in Kubernetes
 
 ### 1. etcd (Cluster State)
@@ -329,6 +345,14 @@ kubectl delete namespace production
 - [ ] Quarterly: full DR drill (simulate region failure, measure RTO)
 - [ ] After any infrastructure change: verify backups still work
 - [ ] Alert on backup failure: if last backup is > 2 hours old, page on-call
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q59 · backup-dr](../kubernetes_practice_questions_100.md#q59--normal--backup-dr)
+
 
 ---
 

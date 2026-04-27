@@ -10,6 +10,22 @@ Docker's networking model handles all of this through **network drivers** — di
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Network Drivers Overview](#network-drivers-overview) · [Default Bridge Limitation](#the-default-bridge-network-and-its-problem) · [User-Defined Bridge Networks](#user-defined-bridge-networks-the-right-way)
+
+**Should Learn** — important for real projects and interviews:
+[Port Publishing](#port-publishing) · [Container DNS](#container-dns-on-named-networks) · [Multi-Network Segmentation](#connecting-a-container-to-multiple-networks)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Host Network Driver](#the-host-network-driver) · [Overlay Networks](#overlay-networks-multi-host)
+
+**Reference** — skim once, look up when needed:
+[Network Troubleshooting](#network-troubleshooting) · [none Driver](#the-none-network-driver)
+
+---
+
 ## Network Drivers Overview
 
 | Driver | Use Case | Container-to-container DNS? | Multi-host? |
@@ -298,6 +314,16 @@ docker inspect --format '{{range .NetworkSettings.Networks}}{{.IPAddress}} {{end
 - Overlay networks let containers across multiple hosts communicate (Swarm/Kubernetes).
 - Connect a container to multiple networks to implement network segmentation.
 - Always test connectivity with `docker exec <container> ping <other-container>`.
+
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q73 · docker-networking-advanced](../docker_practice_questions_100.md#q73--thinking--docker-networking-advanced)
+- 📝 [Q78 · explain-compose-networking](../docker_practice_questions_100.md#q78--interview--explain-compose-networking)
+
 
 ---
 

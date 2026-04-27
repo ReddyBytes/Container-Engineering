@@ -14,6 +14,22 @@ Kubernetes scheduling works exactly this way. The scheduler places every pod on 
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Taints and Tolerations](#taints-and-tolerations-dedicated-nodes) · [NodeAffinity](#nodeaffinity-flexible-node-matching) · [PodAntiAffinity](#podaffinity-and-podantiaffinity)
+
+**Should Learn** — important for real projects and interviews:
+[Topology Spread Constraints](#topology-spread-constraints) · [Priority and Preemption](#priority-classes-and-preemption)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[NodeSelector](#nodeselector-simple-keyvalue-matching) · [HA App Example](#practical-example-ha-web-application)
+
+**Reference** — skim once, look up when needed:
+[When to Use What](#when-to-use-what)
+
+---
+
 ## The Default Scheduler
 
 Without any scheduling hints, the Kubernetes scheduler uses a scoring algorithm:
@@ -340,6 +356,17 @@ spec:
             app: myapp
       priorityClassName: critical-production
 ```
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q55 · advanced-scheduling](../kubernetes_practice_questions_100.md#q55--normal--advanced-scheduling)
+- 📝 [Q56 · taints-tolerations](../kubernetes_practice_questions_100.md#q56--normal--taints-tolerations)
+- 📝 [Q57 · node-affinity](../kubernetes_practice_questions_100.md#q57--normal--node-affinity)
+- 📝 [Q95 · debug-pending-pod](../kubernetes_practice_questions_100.md#q95--debug--debug-pending-pod)
+
 
 ---
 

@@ -158,7 +158,7 @@ Several options:
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

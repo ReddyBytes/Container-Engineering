@@ -143,7 +143,7 @@ kubectl logs -n kube-system -l k8s-app=kube-proxy
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

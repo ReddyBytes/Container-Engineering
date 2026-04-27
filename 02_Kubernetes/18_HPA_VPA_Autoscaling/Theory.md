@@ -18,6 +18,22 @@ Kubernetes has three autoscaling mechanisms, each operating at a different level
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Three Autoscaling Dimensions](#the-three-autoscaling-dimensions) · [HPA -- Horizontal Pod Autoscaler](#hpa----horizontal-pod-autoscaler) · [VPA -- Vertical Pod Autoscaler](#vpa----vertical-pod-autoscaler)
+
+**Should Learn** — important for real projects and interviews:
+[HPA with Custom Metrics](#hpa-with-custom-metrics) · [HPA + VPA Conflict](#hpa--vpa-together-the-conflict)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Cluster Autoscaler](#cluster-autoscaler) · [KEDA Event-Driven Autoscaling](#keda----event-driven-autoscaling)
+
+**Reference** — skim once, look up when needed:
+[Prerequisites](#prerequisites)
+
+---
+
 ## The Three Autoscaling Dimensions
 
 ```mermaid
@@ -202,8 +218,19 @@ KEDA can also scale to **zero replicas** — something native HPA cannot do (min
 | KEDA controller | KEDA scalers |
 | Cloud provider node groups | Cluster Autoscaler |
 
+
 ---
 
+## 📝 Practice Questions
+
+- 📝 [Q42 · hpa](../kubernetes_practice_questions_100.md#q42--normal--hpa)
+- 📝 [Q43 · vpa](../kubernetes_practice_questions_100.md#q43--normal--vpa)
+- 📝 [Q84 · scenario-hpa-not-scaling](../kubernetes_practice_questions_100.md#q84--design--scenario-hpa-not-scaling)
+
+
+---
+
+🚀 **Apply this:** Add HPA to a real API → [Project 08 — E-Commerce API on Kubernetes](../../05_Capstone_Projects/08_Ecommerce_API_K8s/01_MISSION.md)
 ## 📂 Navigation
 
 | | Link |

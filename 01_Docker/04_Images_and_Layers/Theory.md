@@ -10,6 +10,22 @@ Docker images are exactly that standardized container. They're portable, immutab
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[What a Container Image Is](#what-is-a-container-image) · [What a Layer Actually Is](#what-a-layer-actually-is) · [Layer Caching Rules](#layer-caching-dockers-superpower-and-gotcha)
+
+**Should Learn** — important for real projects and interviews:
+[Tags vs Digests vs IDs](#image-ids-digests-and-tags) · [Essential Image Commands](#essential-image-commands) · [Image Naming Format](#image-naming-the-full-format)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Multi-Platform Images](#multi-platform-images) · [Dangling Images and Cleanup](#dangling-images-and-cleanup)
+
+**Reference** — skim once, look up when needed:
+[Layer Architecture Diagram](#layer-architecture-diagram)
+
+---
+
 ## What Is a Container Image?
 
 A **container image** is a read-only, layered filesystem bundle plus metadata (environment variables, the command to run, port information, etc.). Think of it as a template — you create containers from images, just like you create objects from a class in programming.
@@ -263,6 +279,17 @@ docker pull --platform linux/amd64 nginx
 - `latest` is just a tag — it doesn't guarantee recency. Always pin versions in production.
 - Layer caching is powerful: put stable layers early in the Dockerfile, frequently-changing layers last.
 - Dangling images accumulate over time; clean them with `docker image prune`.
+
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q63 · image-garbage-collection](../docker_practice_questions_100.md#q63--thinking--image-garbage-collection)
+- 📝 [Q72 · image-manifest](../docker_practice_questions_100.md#q72--thinking--image-manifest)
+- 📝 [Q76 · explain-layers-caching](../docker_practice_questions_100.md#q76--interview--explain-layers-caching)
+
 
 ---
 

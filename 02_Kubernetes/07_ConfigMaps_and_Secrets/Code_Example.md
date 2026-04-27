@@ -331,7 +331,7 @@ kubectl patch serviceaccount default -p \
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

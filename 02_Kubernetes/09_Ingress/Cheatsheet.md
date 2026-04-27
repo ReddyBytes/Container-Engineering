@@ -194,7 +194,7 @@ kubectl run test --image=curlimages/curl --rm -it --restart=Never -- \
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

@@ -22,6 +22,22 @@ Now multiply this by 20 services. And 100 services. Every team implements the sa
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[What Is a Service Mesh](#what-is-a-service-mesh) · [Istio Key Features](#key-istio-features) · [When to Use a Mesh](#when-you-need-a-mesh-vs-when-its-overkill)
+
+**Should Learn** — important for real projects and interviews:
+[Istio Architecture](#istio-the-feature-rich-option) · [Linkerd Alternative](#linkerd-the-lightweight-alternative)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Service Mesh Overhead](#service-mesh-overhead)
+
+**Reference** — skim once, look up when needed:
+[Installing Istio](#installing-istio)
+
+---
+
 ## What Is a Service Mesh?
 
 A service mesh is an infrastructure layer that handles service-to-service communication. Instead of your application code implementing mTLS, retries, circuit breaking, and tracing, the mesh does it transparently.
@@ -225,6 +241,15 @@ istioctl verify-install
 # Check sidecar injection status
 kubectl get pods -n production   # pods should show 2/2 containers
 ```
+
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q71 · service-mesh-advanced](../kubernetes_practice_questions_100.md#q71--thinking--service-mesh-advanced)
+
 
 ---
 

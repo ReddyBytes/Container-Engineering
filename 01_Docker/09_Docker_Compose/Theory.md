@@ -10,6 +10,22 @@ This is why teams adopt Docker Compose immediately after learning basic Docker. 
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Compose File Structure](#docker-composeyaml-structure) · [Service Configuration](#service-configuration-deep-dive) · [depends_on and Readiness](#depends_on--start-order-vs-readiness)
+
+**Should Learn** — important for real projects and interviews:
+[Compose Commands](#compose-commands) · [Networks in Compose](#networks-in-compose) · [Environment Variables](#environment-variables-in-compose)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Compose Profiles](#compose-profiles) · [Compose Overrides](#compose-overrides)
+
+**Reference** — skim once, look up when needed:
+[Volumes in Compose](#volumes-in-compose) · [Compose Stack Diagram](#the-mermaid-view-of-a-compose-stack)
+
+---
+
 ## What Compose Solves
 
 Before Compose, running a three-service application meant:
@@ -471,8 +487,21 @@ docker compose -f docker-compose.yaml -f docker-compose.prod.yaml up -d
 - `docker-compose.override.yml` is automatically merged — great for dev-specific settings.
 - `docker compose down -v` removes volumes (destroys database data). Never use in production without understanding the implications.
 
+
+
 ---
 
+## 📝 Practice Questions
+
+- 📝 [Q62 · docker-compose-depends-on](../docker_practice_questions_100.md#q62--thinking--docker-compose-depends-on)
+- 📝 [Q75 · docker-compose-profiles](../docker_practice_questions_100.md#q75--thinking--docker-compose-profiles)
+- 📝 [Q83 · scenario-compose-migration](../docker_practice_questions_100.md#q83--design--scenario-compose-migration)
+- 📝 [Q85 · scenario-startup-order](../docker_practice_questions_100.md#q85--design--scenario-startup-order)
+
+
+---
+
+🚀 **Apply this:** Wire up a multi-container stack → [Project 02 — Multi-Container App with Compose](../../05_Capstone_Projects/02_Multi_Container_App_Compose/01_MISSION.md)
 ## 📂 Navigation
 
 **In this folder:**

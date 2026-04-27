@@ -147,7 +147,7 @@ kubectl delete deployment my-app --cascade=orphan
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

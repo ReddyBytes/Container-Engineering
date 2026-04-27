@@ -14,6 +14,22 @@ The important twist: by default, Kubernetes does NOT enforce any of this. Every 
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[What Is a NetworkPolicy](#what-is-a-networkpolicy) · [NetworkPolicy Spec Anatomy](#networkpolicy-spec-anatomy) · [The Deny-All Pattern](#the-deny-all-pattern)
+
+**Should Learn** — important for real projects and interviews:
+[Selectors: pod, namespace, ipBlock](#selectors-podselector-namespaceselector-ipblock) · [Policy Enforcement Flow](#policy-enforcement-flow) · [CNI Plugin Requirement](#cni-plugin-requirement)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Allow-Specific Patterns](#allow-specific-patterns) · [Debugging Network Policies](#debugging-networkpolicy-issues)
+
+**Reference** — skim once, look up when needed:
+[NetworkPolicy vs Service Mesh](#networkpolicy-vs-service-mesh)
+
+---
+
 ## The Default: Flat Network, No Restrictions
 
 Out of the box, Kubernetes operates with a **default-allow** model:
@@ -392,8 +408,17 @@ For most teams, NetworkPolicies are enough. Service meshes add significant opera
 - Use NetworkPolicies alongside RBAC — NetworkPolicies control network, RBAC controls API access
 - For L7 rules (HTTP path, JWT auth), use Cilium's `CiliumNetworkPolicy` or a service mesh
 
+
 ---
 
+## 📝 Practice Questions
+
+- 📝 [Q46 · network-policies](../kubernetes_practice_questions_100.md#q46--normal--network-policies)
+
+
+---
+
+🚀 **Apply this:** Lock down a production cluster → [Project 06 — Production K8s Cluster](../../05_Capstone_Projects/06_Production_K8s_Cluster/01_MISSION.md)
 ## 📂 Navigation
 
 ⬅️ **Prev:** [Resource Quotas and Limits](../19_Resource_Quotas_and_Limits/Interview_QA.md) &nbsp;&nbsp;&nbsp; ➡️ **Next:** [Service Accounts](../21_Service_Accounts/Theory.md)

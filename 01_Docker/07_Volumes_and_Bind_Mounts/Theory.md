@@ -19,6 +19,22 @@ Docker solves this with three types of storage mounts:
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Three Types of Storage](#three-types-of-storage) · [Named Volumes](#named-volumes) · [Bind Mounts](#bind-mounts)
+
+**Should Learn** — important for real projects and interviews:
+[Decision Table](#decision-table-which-storage-type-to-use) · [Volume and Bind Mount Syntax](#volume-and-bind-mount-syntax) · [Volume Commands](#named-volume-commands)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Volume Pre-Population](#volume-pre-population-initializing-volumes-from-images) · [Volume Sharing Between Containers](#volume-sharing-between-containers)
+
+**Reference** — skim once, look up when needed:
+[Volume Drivers](#volume-drivers-beyond-local-storage) · [Troubleshooting Volumes](#troubleshooting-volumes)
+
+---
+
 ## Three Types of Storage
 
 ```mermaid
@@ -261,6 +277,17 @@ File I/O goes through the VM's file sharing layer. For database data and node_mo
 - Use `--mount` syntax over `-v` for clarity and error checking.
 - Named volumes can be pre-populated from image contents on first mount.
 - Volume drivers extend volumes to cloud and networked storage.
+
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q66 · docker-compose-volumes](../docker_practice_questions_100.md#q66--critical--docker-compose-volumes)
+- 📝 [Q74 · volume-drivers](../docker_practice_questions_100.md#q74--thinking--volume-drivers)
+- 📝 [Q79 · compare-volume-types](../docker_practice_questions_100.md#q79--interview--compare-volume-types)
+
 
 ---
 

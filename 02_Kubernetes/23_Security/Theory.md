@@ -22,6 +22,22 @@ Let's build the castle, layer by layer.
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Pod Security Standards](#layer-1-pod-security-standards) · [securityContext Hardening](#layer-2-securitycontext----container-level-hardening) · [Image Security](#layer-3-image-security)
+
+**Should Learn** — important for real projects and interviews:
+[Admission Controllers](#layer-4-admission-controllers) · [Secrets Encryption](#layer-5-secrets-encryption-at-rest)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Runtime Security Falco](#layer-6-runtime-security-with-falco)
+
+**Reference** — skim once, look up when needed:
+[Security Checklist](#security-checklist)
+
+---
+
 ## Layer 1: Pod Security Standards
 
 For years, Kubernetes had **Pod Security Policies (PSP)** — a way to restrict what pods could do. PSPs were powerful but notoriously complex and confusing. They were deprecated in K8s 1.21 and removed in 1.25.
@@ -311,6 +327,14 @@ flowchart TD
     RBAC --> Falco
     Falco -->|"suspicious activity"| Alert
 ```
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q47 · pod-security](../kubernetes_practice_questions_100.md#q47--normal--pod-security)
+
 
 ---
 

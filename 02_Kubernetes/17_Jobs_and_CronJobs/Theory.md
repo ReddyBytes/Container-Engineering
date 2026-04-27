@@ -14,6 +14,22 @@ Kubernetes Jobs and CronJobs are designed specifically for finite, scheduled wor
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Jobs: Run to Completion](#jobs-run-to-completion) · [CronJobs: Scheduled Jobs](#cronjobs-scheduled-jobs) · [Job Lifecycle](#job-lifecycle)
+
+**Should Learn** — important for real projects and interviews:
+[Job Parallelism](#job-parallelism) · [CronJob Concurrency Policy](#cronjob-concurrency-policy)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Use Cases](#use-cases) · [CronJob vs Deployment](#cronjob-vs-deployment-for-always-on-tasks)
+
+**Reference** — skim once, look up when needed:
+[Cron Syntax](#cron-syntax-reminder)
+
+---
+
 ## Jobs: Run to Completion
 
 A **Job** creates one or more pods and ensures that a specified number of them successfully complete. Once the desired completions are reached, the Job is considered done — it does not restart.
@@ -151,6 +167,14 @@ graph TD
 If a task genuinely needs to run continuously in a loop (polling a queue every second), use a **Deployment**, not a CronJob. CronJobs have minimum resolution of 1 minute. For sub-minute polling, use a Deployment with a loop in the container.
 
 If a task runs periodically (every 5 minutes or less frequently), use a CronJob — it is cleaner and provides better history/auditability.
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q41 · jobs-cronjobs](../kubernetes_practice_questions_100.md#q41--normal--jobs-cronjobs)
+
 
 ---
 

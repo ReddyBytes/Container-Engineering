@@ -18,6 +18,22 @@ The 3am patch? Now you must commit it to Git (even in a hotfix branch), and it t
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[GitOps Principles](#the-gitops-principles) · [Push vs Pull CI/CD](#push-based-vs-pull-based) · [ArgoCD Basics](#argocd-gitops-controller)
+
+**Should Learn** — important for real projects and interviews:
+[Secrets in GitOps](#secrets-in-gitops) · [Flux Alternative](#flux-the-cncf-alternative)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[ApplicationSet Multi-Env](#argocd-applicationset-multi-cluster--multi-env) · [Environment Strategy](#environment-strategy-branches-vs-directories-vs-repos)
+
+**Reference** — skim once, look up when needed:
+[Full Pipeline Example](#cicd--gitops-full-pipeline)
+
+---
+
 ## The GitOps Principles
 
 1. **Declarative**: the entire desired system state is described declaratively (Kubernetes YAML)
@@ -255,8 +271,17 @@ git push origin feature/new-payment
 # If rollout fails → marks as Degraded → alerts
 ```
 
+
 ---
 
+## 📝 Practice Questions
+
+- 📝 [Q54 · gitops-cicd](../kubernetes_practice_questions_100.md#q54--normal--gitops-cicd)
+
+
+---
+
+🚀 **Apply this:** Build a CI/CD pipeline with GitOps → [Project 05 — CI/CD Build-Push-Deploy](../../05_Capstone_Projects/05_CICD_Build_Push_Deploy/01_MISSION.md)
 ## 📂 Navigation
 
 | | Link |

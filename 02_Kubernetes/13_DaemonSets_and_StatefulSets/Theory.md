@@ -16,6 +16,22 @@ DaemonSets solve problem 1. StatefulSets solve problem 2.
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[DaemonSets: One Per Node](#daemonsets-one-pod-per-node) · [StatefulSets: Identity-Stable Pods](#statefulsets-identity-stable-pods) · [Comparison Table](#daemonset-vs-statefulset-vs-deployment)
+
+**Should Learn** — important for real projects and interviews:
+[Headless Service](#headless-service) · [VolumeClaimTemplates](#volumeclaimtemplates----per-pod-storage) · [When NOT to Use StatefulSet](#when-not-to-use-statefulset)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Node Selectors and Tolerations](#node-selectors-and-tolerations) · [StatefulSet Update Strategies](#statefulset-update-strategies)
+
+**Reference** — skim once, look up when needed:
+[Common StatefulSet Gotchas](#common-statefulset-gotchas)
+
+---
+
 ## DaemonSets: One Pod Per Node
 
 A **DaemonSet** ensures that exactly one copy of a pod runs on every node in the cluster (or a selected subset of nodes). When a new node is added, the DaemonSet automatically schedules the pod onto it. When a node is removed, the pod is garbage collected.
@@ -175,6 +191,16 @@ StatefulSets are not a silver bullet. Avoid them when:
 2. **Scaling down removes the highest ordinal pod first**: If you scale from 3 to 1, pod-2 and pod-1 are deleted — pod-0 (usually the primary) survives.
 3. **Pods won't start if their PVC can't be bound**: A StatefulSet pod stays Pending if its PVC cannot find a matching PersistentVolume.
 4. **Headless service must exist before the StatefulSet**: Create the service first, or pods will have DNS issues at startup.
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q32 · daemonsets](../kubernetes_practice_questions_100.md#q32--normal--daemonsets)
+- 📝 [Q33 · statefulsets](../kubernetes_practice_questions_100.md#q33--normal--statefulsets)
+- 📝 [Q77 · compare-deployment-statefulset](../kubernetes_practice_questions_100.md#q77--interview--compare-deployment-statefulset)
+
 
 ---
 

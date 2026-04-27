@@ -14,6 +14,22 @@ This is exactly the problem Custom Resources solve. They let you teach Kubernete
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[What is a CRD](#what-is-a-custom-resource-definition-crd) · [Operator Pattern](#the-operator-pattern) · [How Operators Work](#how-the-operator-pattern-works)
+
+**Should Learn** — important for real projects and interviews:
+[Real-World Operators](#real-world-operator-examples) · [Helm vs Operator](#when-to-write-an-operator-vs-use-helm)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Operator Frameworks](#writing-operators-frameworks-and-tools) · [Operator Maturity Levels](#operator-maturity-levels)
+
+**Reference** — skim once, look up when needed:
+[CRD Versioning](#crd-versioning-and-conversion) · [Status Subresource](#status-subresource)
+
+---
+
 ## What is a Custom Resource Definition (CRD)?
 
 A **Custom Resource Definition (CRD)** is a Kubernetes API extension that registers a new resource type with the API server. Once a CRD is created, you can create, list, update, and delete instances of the new type just like any built-in resource — using kubectl, the API, or GitOps tools.
@@ -217,6 +233,15 @@ status:
 ```
 
 Users should never need to manually edit status — the operator owns it.
+
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q74 · custom-controllers](../kubernetes_practice_questions_100.md#q74--thinking--custom-controllers)
+
 
 ---
 

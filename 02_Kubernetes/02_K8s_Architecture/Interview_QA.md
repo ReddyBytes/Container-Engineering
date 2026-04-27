@@ -147,7 +147,7 @@ server stores it; the controller manager notices it and creates ReplicaSets and 
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

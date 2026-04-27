@@ -10,6 +10,22 @@ This module is your translation guide — from the Compose mental model to the K
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Core Concept Mapping](#the-core-concept-mapping) · [depends_on Problem](#the-dependson-problem) · [Manual Migration Steps](#manual-migration-walkthrough)
+
+**Should Learn** — important for real projects and interviews:
+[Kompose Tool](#the-kompose-tool) · [Kompose Limitations](#limitations-of-kompose-output-always-review)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Namespace and Secrets Setup](#step-3-create-configmaps-and-secrets) · [PVC Creation](#step-4-create-persistentvolumeclaims-for-volumes)
+
+**Reference** — skim once, look up when needed:
+[Ingress Migration Note](#limitations-of-kompose-output-always-review)
+
+---
+
 ## The Core Concept Mapping
 
 Docker Compose thinks in terms of **services** — self-contained units with an image, config, and dependencies. Kubernetes splits this into two separate objects:
@@ -173,6 +189,7 @@ Apply to a staging namespace, run smoke tests, then apply to production.
 
 ---
 
+🚀 **Apply this:** Migrate a Compose app to K8s → [Project 04 — Full-Stack App on K8s](../../05_Capstone_Projects/04_Full_Stack_on_K8s/01_MISSION.md)
 ## 📂 Navigation
 
 | | Link |

@@ -10,6 +10,22 @@ Docker is the perfect building block for CI/CD because it eliminates "works on m
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[The CI/CD Pipeline with Docker](#the-cicd-pipeline-with-docker) · [GitHub Actions with Docker](#github-actions-with-docker) · [Image Tagging in CI](#image-tagging-in-ci)
+
+**Should Learn** — important for real projects and interviews:
+[Docker Layer Caching in CI](#docker-layer-caching-in-ci) · [Testing in Docker](#testing-in-docker) · [Security: Secrets and Credentials](#security-secrets-and-credentials)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Multi-Platform Builds](#multi-platform-builds)
+
+**Reference** — skim once, look up when needed:
+[ECR with OIDC](#ecr-with-oidc-no-long-lived-credentials) · [docker/metadata-action](#use-dockermetadata-action-for-smart-tagging)
+
+---
+
 ## The CI/CD Pipeline with Docker
 
 Here's what a complete Docker-powered CI/CD pipeline looks like:
@@ -276,8 +292,18 @@ If using Docker Hub, use an Access Token (not your password) scoped to only what
     # DOCKERHUB_TOKEN = Docker Hub access token, not your login password
 ```
 
+
+
 ---
 
+## 📝 Practice Questions
+
+- 📝 [Q88 · scenario-ci-optimization](../docker_practice_questions_100.md#q88--design--scenario-ci-optimization)
+
+
+---
+
+🚀 **Apply this:** Build a real CI/CD pipeline → [Project 05 — CI/CD Build-Push-Deploy](../../05_Capstone_Projects/05_CICD_Build_Push_Deploy/01_MISSION.md)
 ## 📂 Navigation
 
 | | Link |

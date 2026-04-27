@@ -20,6 +20,22 @@ This module is about Service Accounts — the identity system for workloads.
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Default SA Problem](#the-default-service-account-problem) · [Token Lifecycle](#how-service-account-tokens-work) · [Creating and Using SAs](#creating-and-using-service-accounts)
+
+**Should Learn** — important for real projects and interviews:
+[Disable Auto-Mount](#disabling-auto-mount) · [IRSA on EKS](#irsa-iam-roles-for-service-accounts-aws-eks)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Workload Identity GKE](#workload-identity-gke) · [Token Inspection](#token-inspection)
+
+**Reference** — skim once, look up when needed:
+[Best Practices Table](#service-account-best-practices-summary) · [Common Commands](#common-commands)
+
+---
+
 ## The Default Service Account Problem
 
 Every Namespace gets a `default` Service Account automatically. And here is the dangerous default behavior: **every Pod gets the `default` Service Account token auto-mounted inside it**, at `/var/run/secrets/kubernetes.io/serviceaccount/token`.
@@ -291,6 +307,14 @@ kubectl create token myapp-sa -n production
 # Create a token with custom expiry
 kubectl create token myapp-sa --duration=8h -n production
 ```
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q66 · service-accounts](../kubernetes_practice_questions_100.md#q66--normal--service-accounts)
+
 
 ---
 

@@ -16,6 +16,22 @@ That was the reality of sidecars in Kubernetes before version 1.29. The platform
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Native Sidecar Solution](#native-sidecar-containers-the-solution) · [Lifecycle Comparison](#lifecycle-comparison) · [Jobs Use Case](#jobs-the-killer-use-case)
+
+**Should Learn** — important for real projects and interviews:
+[Use Cases](#use-cases) · [Migration Example](#migration-from-workaround-to-native-sidecar) · [Startup and Shutdown Order](#complete-lifecycle-of-a-native-sidecar)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Built-in Probes](#built-in-probes-on-native-sidecars) · [Init Container Comparison](#native-sidecar-vs-regular-init-container-vs-regular-container)
+
+**Reference** — skim once, look up when needed:
+[Old Sidecar Problem](#the-old-sidecar-problem-pre-k8s-129) · [Version History](#version-history)
+
+---
+
 ## The Old Sidecar Problem (Pre-K8s 1.29)
 
 Before native sidecars, developers had two bad choices:

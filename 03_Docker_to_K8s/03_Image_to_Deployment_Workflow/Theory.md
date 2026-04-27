@@ -10,6 +10,22 @@ The journey from `docker build` to `kubectl get pods` involves 5 concrete steps 
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Complete Pipeline](#the-complete-pipeline) · [Write Deployment YAML](#step-3-write-the-deployment-yaml) · [Apply to Cluster](#step-4-apply-to-the-cluster----what-happens-under-the-hood)
+
+**Should Learn** — important for real projects and interviews:
+[Push to Registry](#step-2-push-to-a-registry) · [Expose with Service and Ingress](#step-5-expose-with-service-and-ingress) · [Rolling Updates](#updates-change-image-tag--rolling-update)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Rollbacks](#rollbacks) · [imagePullPolicy Options](#step-3-write-the-deployment-yaml)
+
+**Reference** — skim once, look up when needed:
+[Build the Image](#step-1-build-the-image)
+
+---
+
 ## The Complete Pipeline
 
 ```mermaid
@@ -328,7 +344,7 @@ Kubernetes keeps the previous ReplicaSets around (up to `revisionHistoryLimit`, 
 
 ## 📂 Navigation
 
-⬅️ **Prev:** [Compose to K8s Migration](../02_Compose_to_K8s_Migration/Interview_QA.md) &nbsp;&nbsp;&nbsp; ➡️ **Next:** [Projects](../../04_Projects/01_Dockerize_a_Python_App/Theory.md)
+⬅️ **Prev:** [Compose to K8s Migration](../02_Compose_to_K8s_Migration/Interview_QA.md) &nbsp;&nbsp;&nbsp; ➡️ **Next:** [Projects](../../05_Capstone_Projects/01_Dockerize_a_Python_App/01_MISSION.md)
 
 | File | Description |
 |---|---|

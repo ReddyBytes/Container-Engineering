@@ -17,6 +17,22 @@ creates a shared environment at the Pod level.
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Why Pods](#why-pods----not-containers) · [Pod Lifecycle](#pod-lifecycle) · [Pod YAML Anatomy](#pod-yaml-anatomy)
+
+**Should Learn** — important for real projects and interviews:
+[Probes Health Checking](#probes-health-checking) · [Why Not Bare Pods](#why-you-rarely-create-pods-directly)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Multi-Container Patterns](#multi-container-pod-patterns) · [Static Pods](#static-pods)
+
+**Reference** — skim once, look up when needed:
+[Requests vs Limits](#resources-requests-vs-limits)
+
+---
+
 ## Why Pods — Not Containers?
 
 When you put containers inside a Pod, they get:
@@ -221,9 +237,22 @@ kubelet can run three types of probes against containers:
 Use startup probes for apps that take a long time to initialize (prevents liveness from killing
 them before they've even started).
 
+
 ---
 
-## Navigation
+## 📝 Practice Questions
+
+- 📝 [Q9 · pods-basics](../kubernetes_practice_questions_100.md#q9--normal--pods-basics)
+- 📝 [Q10 · pod-lifecycle](../kubernetes_practice_questions_100.md#q10--normal--pod-lifecycle)
+- 📝 [Q11 · pod-spec](../kubernetes_practice_questions_100.md#q11--debug--pod-spec)
+- 📝 [Q76 · explain-pods-junior](../kubernetes_practice_questions_100.md#q76--interview--explain-pods-junior)
+- 📝 [Q94 · debug-imagepullbackoff](../kubernetes_practice_questions_100.md#q94--debug--debug-imagepullbackoff)
+- 📝 [Q100 · edge-case-termination](../kubernetes_practice_questions_100.md#q100--critical--edge-case-termination)
+
+
+---
+
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

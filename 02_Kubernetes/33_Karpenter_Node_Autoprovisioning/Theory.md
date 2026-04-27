@@ -16,6 +16,22 @@ This is the world that **Karpenter** was designed to escape.
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[How Karpenter Works](#how-karpenter-works) · [NodePool](#nodepool) · [Karpenter vs Cluster Autoscaler](#karpenter-vs-cluster-autoscaler)
+
+**Should Learn** — important for real projects and interviews:
+[Consolidation](#consolidation-karpenters-underrated-feature) · [Spot Instance Handling](#spot-instance-handling) · [EC2NodeClass](#ec2nodeclass)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Multi-Architecture](#multi-architecture-arm64-for-cost-savings) · [Protecting Workloads](#protecting-workloads-from-consolidation)
+
+**Reference** — skim once, look up when needed:
+[Cluster Autoscaler Limitations](#cluster-autoscaler-the-limitations) · [Installation](#installation-eks)
+
+---
+
 ## Cluster Autoscaler: The Limitations
 
 Cluster Autoscaler (CA) has been the standard K8s node scaling tool since 2016. It works by monitoring unschedulable pods and expanding Auto Scaling Groups (ASGs). It has served well, but its architectural constraints create real operational pain:
@@ -275,6 +291,14 @@ metadata:
 ## Summary
 
 Karpenter represents a fundamental rethinking of node autoscaling. Rather than managing fixed pools and waiting for ASGs, it computes ideal nodes on-demand and launches them in seconds. Its consolidation engine continuously right-sizes the cluster without human intervention. For any EKS cluster with variable workloads — especially those using Spot instances or multiple instance families — Karpenter is the modern standard as of 2024.
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q68 · karpenter](../kubernetes_practice_questions_100.md#q68--thinking--karpenter)
+
 
 ---
 

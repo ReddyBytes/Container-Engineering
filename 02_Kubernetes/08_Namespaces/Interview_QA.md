@@ -183,7 +183,7 @@ Custom resources and many built-in types (configmaps, secrets, pvcs) are exclude
 
 ---
 
-## Navigation
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

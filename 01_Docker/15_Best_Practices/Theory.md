@@ -8,6 +8,22 @@ This module is about the gap between the two. Most of these practices are small 
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Layer Optimization](#2-layer-optimization-combine-run-commands) · [Cache Busting](#3-cache-busting-copy-dependencies-before-source-code) · [.dockerignore](#4-dockerignore-always-include-it)
+
+**Should Learn** — important for real projects and interviews:
+[Image Size: Right Base](#1-image-size-start-with-the-right-base) · [One Process Per Container](#5-one-process-per-container) · [Health Checks](#7-health-checks-in-dockerfiles)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Explicit Tags](#6-explicit-tags-never-use-latest-in-production) · [Logging to stdout/stderr](#8-logging-write-to-stdoutstderr) · [Configuration via Env Vars](#9-configuration-via-environment-variables)
+
+**Reference** — skim once, look up when needed:
+[Common Anti-Patterns Table](#10-common-anti-patterns-table) · [Security Checklist Before Pushing](#security-checklist-before-pushing)
+
+---
+
 ## 1. Image Size: Start With the Right Base
 
 The base image you choose is the floor of your image size. Everything you add is on top of it.
@@ -316,6 +332,15 @@ Quick checklist to run through before every image push:
 [ ] Only necessary packages installed (--no-install-recommends)
 [ ] Package manager cache cleaned in same RUN layer
 ```
+
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q81 · scenario-production-architecture](../docker_practice_questions_100.md#q81--design--scenario-production-architecture)
+
 
 ---
 

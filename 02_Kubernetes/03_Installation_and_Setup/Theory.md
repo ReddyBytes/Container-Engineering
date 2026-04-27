@@ -12,6 +12,22 @@ thousands of nodes. Let's start with what you'll use most as a beginner: local d
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[kubectl Basics](#kubectl-the-swiss-army-knife) · [kubeconfig](#kubeconfig-how-kubectl-knows-where-to-connect) · [Contexts](#contexts-switching-between-clusters)
+
+**Should Learn** — important for real projects and interviews:
+[Local Dev Options](#local-development-options) · [Namespaces Intro](#namespaces-introduction)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Production Options](#production-options) · [Verify Cluster](#verifying-your-cluster-is-working)
+
+**Reference** — skim once, look up when needed:
+[Local Tool Comparison](#comparison)
+
+---
+
 ## Local Development Options
 
 ### minikube
@@ -343,9 +359,18 @@ kubectl run test --image=nginx --rm -it -- /bin/sh
 
 If all nodes show `Ready` and system pods show `Running`, your cluster is healthy.
 
+
 ---
 
-## Navigation
+## 📝 Practice Questions
+
+- 📝 [Q7 · kubectl-basics](../kubernetes_practice_questions_100.md#q7--normal--kubectl-basics)
+- 📝 [Q8 · kubeconfig](../kubernetes_practice_questions_100.md#q8--normal--kubeconfig)
+
+
+---
+
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

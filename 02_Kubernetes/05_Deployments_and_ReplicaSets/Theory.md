@@ -18,6 +18,22 @@ This is exactly what Deployments and ReplicaSets do for your containers.
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Deployment Overview](#deployment-manage-replicasets-with-version-history) · [Rolling Update Strategy](#rolling-update-strategy) · [Rollout Commands](#key-rollout-commands)
+
+**Should Learn** — important for real projects and interviews:
+[Deployment YAML](#deployment-yaml-anatomy) · [ReplicaSet Basics](#replicaset-always-keep-n-copies-running)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Recreate Strategy](#recreate-strategy) · [Scaling](#scaling)
+
+**Reference** — skim once, look up when needed:
+[Selector Field](#the-selector-field)
+
+---
+
 ## ReplicaSet: "Always Keep N Copies Running"
 
 A **ReplicaSet** is a Kubernetes object that says: "I want exactly N pods with these
@@ -253,9 +269,21 @@ kubectl scale deployment my-app --replicas=10
 kubectl apply -f deployment.yaml
 ```
 
+
 ---
 
-## Navigation
+## 📝 Practice Questions
+
+- 📝 [Q12 · deployments](../kubernetes_practice_questions_100.md#q12--normal--deployments)
+- 📝 [Q13 · replicasets](../kubernetes_practice_questions_100.md#q13--normal--replicasets)
+- 📝 [Q14 · rolling-updates](../kubernetes_practice_questions_100.md#q14--normal--rolling-updates)
+- 📝 [Q93 · predict-rolling-update](../kubernetes_practice_questions_100.md#q93--logical--predict-rolling-update)
+
+
+🚀 **Apply this:** Deploy a real app to K8s → [Project 03 — Deploy App to Kubernetes](../../05_Capstone_Projects/03_Deploy_App_to_Kubernetes/01_MISSION.md)
+---
+
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

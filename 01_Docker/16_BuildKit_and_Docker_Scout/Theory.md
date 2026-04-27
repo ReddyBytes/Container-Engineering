@@ -12,6 +12,22 @@ This module explains what changed, why it matters, and how to take full advantag
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[What BuildKit Is](#what-buildkit-is) · [BuildKit Cache Mounts](#buildkit-cache-mounts-keeping-cache-out-of-layers) · [Secret Mounts](#secret-mounts-never-bake-secrets-into-layers)
+
+**Should Learn** — important for real projects and interviews:
+[Build Cache](#build-cache-the-problem-it-solves) · [Docker Scout](#docker-scout-software-supply-chain-security) · [Multi-Platform Builds](#multi-platform-builds)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[SSH Mounts](#ssh-mounts-private-git-repos-during-build) · [Heredoc Syntax](#heredoc-syntax-in-dockerfiles) · [Docker Build Cloud](#docker-build-cloud)
+
+**Reference** — skim once, look up when needed:
+[DOCKER_BUILDKIT=1 and buildx](#docker_buildkit1-and-buildx) · [Summary](#summary) · [Alternative Tools](#alternative-tools)
+
+---
+
 ## What BuildKit Is
 
 BuildKit is a complete rewrite of the Docker build backend. It is maintained as a separate open-source project (`moby/buildkit`) and handles everything that happens after you type `docker build`: parsing the Dockerfile, managing the layer cache, coordinating build steps, and producing the final image.
@@ -500,6 +516,16 @@ This is what a modern, production-grade Docker build pipeline looks like in 2024
 | Multi-platform builds | arm64 + amd64 from one command | `--platform` flag |
 | Docker Scout | Unknown CVEs in production images | CVE scanning + SBOM generation |
 | Scout policies | Manual security reviews | Automated CI gates |
+
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q58 · buildkit-cache-mounts](../docker_practice_questions_100.md#q58--thinking--buildkit-cache-mounts)
+- 📝 [Q59 · docker-contexts](../docker_practice_questions_100.md#q59--thinking--docker-contexts)
+
 
 ---
 

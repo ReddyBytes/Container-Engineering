@@ -14,6 +14,22 @@ Kubernetes solves this with a two-object model: the **PersistentVolume** (the ac
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Three Core Objects](#the-three-core-objects) · [PV/PVC/StorageClass Relationship](#the-pvpvcstorageclass-relationship) · [Using PVC in a Pod](#using-a-pvc-in-a-pod)
+
+**Should Learn** — important for real projects and interviews:
+[Access Modes](#access-modes) · [Reclaim Policies](#reclaim-policies) · [Static vs Dynamic](#static-vs-dynamic-provisioning)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[CSI Drivers](#csi-drivers----container-storage-interface) · [Volume Binding Modes](#volume-binding-modes)
+
+**Reference** — skim once, look up when needed:
+[VolumeSnapshots](#volumesnapshots) · [Troubleshooting](#common-troubleshooting)
+
+---
+
 ## Ephemeral vs Persistent Storage
 
 Before diving into PVs, it helps to understand what Kubernetes offers for temporary storage:
@@ -321,8 +337,20 @@ spec:
 | `Multi-Attach error` | Two pods on different nodes mounting an RWO volume | Use RWX storage or ensure pods are on the same node |
 | `FailedMount` | Volume in wrong availability zone | Use `WaitForFirstConsumer` binding mode |
 
+
 ---
 
+## 📝 Practice Questions
+
+- 📝 [Q26 · persistent-volumes](../kubernetes_practice_questions_100.md#q26--normal--persistent-volumes)
+- 📝 [Q27 · pvc](../kubernetes_practice_questions_100.md#q27--debug--pvc)
+- 📝 [Q28 · storage-classes](../kubernetes_practice_questions_100.md#q28--normal--storage-classes)
+- 📝 [Q83 · scenario-pvc-pending](../kubernetes_practice_questions_100.md#q83--design--scenario-pvc-pending)
+
+
+---
+
+🚀 **Apply this:** Use PVCs in a full-stack deployment → [Project 04 — Full-Stack App on K8s](../../05_Capstone_Projects/04_Full_Stack_on_K8s/01_MISSION.md)
 ## 📂 Navigation
 
 ⬅️ **Prev:** [Ingress](../09_Ingress/Interview_QA.md) &nbsp;&nbsp;&nbsp; ➡️ **Next:** [RBAC and Security](../11_RBAC/Theory.md)

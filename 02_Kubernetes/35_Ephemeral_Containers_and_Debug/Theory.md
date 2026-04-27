@@ -29,6 +29,22 @@ This was the state of Kubernetes debugging for years. Teams faced a terrible tra
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[What Are Ephemeral Containers](#what-are-ephemeral-containers) · [Core Command](#the-core-command) · [Process Namespace Sharing](#process-namespace-sharing)
+
+**Should Learn** — important for real projects and interviews:
+[Common Debug Images](#common-debug-images) · [Debug Method Summary](#summary-which-debug-method-to-use) · [Use Cases in Practice](#use-cases-in-practice)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Copying a Pod](#copying-a-pod-for-debugging) · [Debugging a Node](#debugging-a-node)
+
+**Reference** — skim once, look up when needed:
+[Ephemeral Container Spec Constraints](#ephemeral-container-spec-constraints) · [Lifecycle Diagram](#ephemeral-container-lifecycle)
+
+---
+
 ## What Are Ephemeral Containers?
 
 An ephemeral container is a special type of container that can be added to an **already running pod** using `kubectl debug`. Unlike regular containers:
@@ -281,6 +297,14 @@ Both containers share the same:
 | Network issues | `kubectl debug -it POD --image=nicolaka/netshoot --target=CONTAINER` |
 | Node-level problem | `kubectl debug node/NODE --image=ubuntu -it` |
 | Need exact environment copy | `kubectl debug POD --copy-to=debug-pod --share-processes -it -- bash` |
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q65 · ephemeral-containers](../kubernetes_practice_questions_100.md#q65--normal--ephemeral-containers)
+
 
 ---
 

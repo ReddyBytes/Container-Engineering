@@ -16,6 +16,22 @@ Understanding *why* each approach exists, and what trade-offs each one makes, is
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Virtual Machines](#virtual-machines-the-first-real-answer) · [Containers: A Leaner Answer](#containers-a-leaner-answer) · [Namespaces and cgroups](#the-linux-features-that-make-containers-work)
+
+**Should Learn** — important for real projects and interviews:
+[VM vs Container Trade-Offs](#vm-vs-container-the-trade-off-table) · [The Container Ecosystem](#the-container-ecosystem) · [Why Containers Changed Software Delivery](#why-containers-changed-software-delivery)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Runtime Stack](#the-runtime-stack) · [OCI Standard](#oci-open-container-initiative)
+
+**Reference** — skim once, look up when needed:
+[Architecture Comparison](#architecture-comparison) · [Common Mistakes](#common-mistakes-and-misconceptions)
+
+---
+
 ## Virtual Machines: The First Real Answer
 
 A **Virtual Machine (VM)** is a complete software emulation of a computer. You run a piece of software called a **hypervisor** on your physical machine (the "host"), and that hypervisor creates one or more virtual machines (the "guests"). Each guest thinks it's running on real hardware, but it's actually running on virtualized hardware that the hypervisor provides.
@@ -219,6 +235,14 @@ The `latest` tag on a container image doesn't mean "the most recent version" in 
 - The runtime stack: `dockerd` → `containerd` → `runc` → Linux kernel.
 - Containers solved the "works on my machine" problem by packaging the app *and* its environment together.
 - Don't treat containers like VMs. Don't store persistent data inside containers. Don't assume they're fully isolated.
+
+
+---
+
+## 📝 Practice Questions
+
+- 📝 [Q1 · containers-vs-vms](../docker_practice_questions_100.md#q1--normal--containers-vs-vms)
+
 
 ---
 

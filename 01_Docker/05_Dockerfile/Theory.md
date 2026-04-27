@@ -10,6 +10,22 @@ Before Dockerfiles existed, shipping software meant writing multi-page runbooks:
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Build Context](#the-build-context) · [FROM, RUN, COPY, WORKDIR](#from--choose-your-starting-ingredients) · [CMD vs ENTRYPOINT](#cmd-vs-entrypoint--what-happens-when-you-serve-the-dish)
+
+**Should Learn** — important for real projects and interviews:
+[ENV and ARG](#env--setting-the-kitchen-temperature) · [USER for Security](#user--whos-allowed-in-the-kitchen) · [Layer Caching Strategy](#layer-caching-strategy-stable--changing)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[HEALTHCHECK](#healthcheck--quality-check-before-serving) · [.dockerignore](#dockerignore-what-not-to-send-to-the-daemon) · [EXPOSE](#expose--labeling-the-serving-window)
+
+**Reference** — skim once, look up when needed:
+[LABEL](#label--attaching-metadata) · [Build Sequence Diagram](#build-context-and-layer-build-sequence)
+
+---
+
 ## The Build Context
 
 Before diving into individual instructions, understand the **build context** — a concept that trips up many beginners.
@@ -372,8 +388,19 @@ Organize your Dockerfile so that the least-frequently-changing instructions are 
 - `.dockerignore` keeps secrets out of images and builds fast.
 - Put stable layers first, changing layers last — maximize cache hits.
 
+
+
 ---
 
+## 📝 Practice Questions
+
+- 📝 [Q61 · dockerfile-healthcheck](../docker_practice_questions_100.md#q61--thinking--dockerfile-healthcheck)
+- 📝 [Q77 · compare-entrypoint-cmd](../docker_practice_questions_100.md#q77--interview--compare-entrypoint-cmd)
+
+
+---
+
+🚀 **Apply this:** Build a production Dockerfile → [Project 01 — Dockerize a Python App](../../05_Capstone_Projects/01_Dockerize_a_Python_App/01_MISSION.md)
 ## 📂 Navigation
 
 **In this folder:**

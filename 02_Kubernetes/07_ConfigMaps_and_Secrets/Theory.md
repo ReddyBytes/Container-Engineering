@@ -20,6 +20,22 @@ Kubernetes provides two objects for this:
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[ConfigMap Basics](#configmap-non-sensitive-configuration) · [Secret Basics](#secret-sensitive-data) · [Consumption Methods](#three-ways-to-consume-configmaps-and-secrets)
+
+**Should Learn** — important for real projects and interviews:
+[Config Injection Flows](#config-injection-flows) · [Secret Types](#secret-types)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[Real Encryption](#real-encryption-sealed-secrets-and-external-secrets) · [Immutable ConfigMaps](#immutable-configmaps-and-secrets)
+
+**Reference** — skim once, look up when needed:
+[envFrom Warning](#method-2-envfrom-all-keys-at-once)
+
+---
+
 ## ConfigMap: Non-Sensitive Configuration
 
 A ConfigMap stores key-value pairs. Keys are string names; values can be simple strings or
@@ -262,9 +278,21 @@ data:
 | `kubernetes.io/ssh-auth` | SSH private keys |
 | `kubernetes.io/basic-auth` | Username/password pairs |
 
+
 ---
 
-## Navigation
+## 📝 Practice Questions
+
+- 📝 [Q18 · configmaps](../kubernetes_practice_questions_100.md#q18--normal--configmaps)
+- 📝 [Q19 · secrets](../kubernetes_practice_questions_100.md#q19--normal--secrets)
+- 📝 [Q20 · env-from-config](../kubernetes_practice_questions_100.md#q20--debug--env-from-config)
+- 📝 [Q79 · compare-configmap-secret](../kubernetes_practice_questions_100.md#q79--interview--compare-configmap-secret)
+- 📝 [Q88 · scenario-secret-rotation](../kubernetes_practice_questions_100.md#q88--design--scenario-secret-rotation)
+
+
+---
+
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|

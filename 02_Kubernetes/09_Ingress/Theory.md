@@ -23,6 +23,22 @@ independently.
 
 ---
 
+## 📌 Learning Priority
+
+**Must Learn** — core concepts, needed to understand the rest of this file:
+[Resource vs Controller](#ingress-resource-vs-ingress-controller) · [Path-Based Routing](#path-based-routing) · [Host-Based Routing](#host-based-routing)
+
+**Should Learn** — important for real projects and interviews:
+[TLS Termination](#tls-termination) · [IngressClass](#ingressclass)
+
+**Good to Know** — useful in specific situations, not needed daily:
+[nginx Annotations](#annotations-for-nginx-ingress) · [cert-manager TLS](#cert-manager-for-automatic-tls)
+
+**Reference** — skim once, look up when needed:
+[pathType Values](#pathtype-values)
+
+---
+
 ## Ingress Resource vs Ingress Controller
 
 This is a common confusion. They are two different things:
@@ -214,9 +230,19 @@ spec:
 
 You can also set a default IngressClass (handles Ingress resources with no class annotation).
 
+
 ---
 
-## Navigation
+## 📝 Practice Questions
+
+- 📝 [Q23 · ingress-basics](../kubernetes_practice_questions_100.md#q23--normal--ingress-basics)
+- 📝 [Q24 · ingress-controller](../kubernetes_practice_questions_100.md#q24--normal--ingress-controller)
+- 📝 [Q25 · tls-ingress](../kubernetes_practice_questions_100.md#q25--normal--tls-ingress)
+
+
+---
+
+## 📂 Navigation
 
 | File | Description |
 |------|-------------|
@@ -225,6 +251,7 @@ You can also set a default IngressClass (handles Ingress resources with no class
 | [Interview_QA.md](./Interview_QA.md) | Interview questions and answers |
 | [Code_Example.md](./Code_Example.md) | Working YAML examples |
 
+🚀 **Apply this:** Add Ingress to a full-stack deployment → [Project 04 — Full-Stack App on K8s](../../05_Capstone_Projects/04_Full_Stack_on_K8s/01_MISSION.md)
 ---
 
 ⬅️ **Prev:** [Namespaces](../08_Namespaces/Theory.md) &nbsp;&nbsp;&nbsp; ➡️ **Next:** [Persistent Volumes](../10_Persistent_Volumes/Theory.md)
